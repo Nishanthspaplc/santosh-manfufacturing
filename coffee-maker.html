@@ -1,0 +1,1015 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Espresso Coffee Makers | Santosh Manufacturing â€” MK-Series</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="espresso coffee maker, MK series, espresso machine, 15 bar 20 bar, B2B wholesale India, CB CE BSCI certified" name="keywords">
+    <meta content="Santosh Manufacturing MK-Series Espresso Coffee Makers â€” 850W, 15â€“20 bar, 1.8L tank. Classic, Digital Touch & Premium variants. CB, CE, BSCI, EMC, ERP, RoHS, LFGB certified. Wholesale pan India." name="description">
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Playfair+Display:ital,wght@1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* â”€â”€ Coffee Maker Page Styles â”€â”€ */
+        :root {
+            --cm-dark:   #17100a;
+            --cm-brown:  #2c1a0e;
+            --cm-cream:  #faf6f0;
+            --cm-cream2: #f3ece2;
+            --cm-amber:  var(--primary);
+        }
+
+        /* â”€â”€ Hero â”€â”€ */
+        .cm-hero {
+            background: var(--cm-dark);
+            min-height: 88vh;
+            display: flex; align-items: center;
+            position: relative; overflow: hidden;
+        }
+        .cm-hero::before {
+            content: '';
+            position: absolute; inset: 0;
+            background: radial-gradient(ellipse at 30% 60%, rgba(171,116,66,0.18) 0%, transparent 60%),
+                        radial-gradient(ellipse at 80% 20%, rgba(100,50,10,0.25) 0%, transparent 50%);
+        }
+        .cm-hero-badge {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: rgba(171,116,66,0.2); color: var(--accent);
+            border: 1px solid rgba(171,116,66,0.3);
+            font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em;
+            text-transform: uppercase; padding: 6px 18px; border-radius: 50px;
+            margin-bottom: 24px;
+        }
+        .cm-hero-title {
+            font-family: 'Playfair Display', serif;
+            font-style: italic; font-weight: 800;
+            font-size: clamp(2.8rem, 5.5vw, 4.5rem);
+            color: #fff; line-height: 1.15; margin-bottom: 22px;
+        }
+        .cm-hero-title .script-accent { color: var(--accent); }
+        .cm-hero-desc { color: rgba(255,255,255,0.68); font-size: 1.05rem; line-height: 1.8; max-width: 500px; margin-bottom: 32px; }
+        .cm-hero-stats {
+            display: flex; gap: 28px; padding-top: 28px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 32px; flex-wrap: wrap;
+        }
+        .cm-hero-stat strong { display: block; font-size: 1.6rem; font-weight: 800; color: var(--accent); line-height: 1; }
+        .cm-hero-stat span { font-size: 0.78rem; color: rgba(255,255,255,0.5); font-weight: 500; margin-top: 4px; display: block; }
+        .cm-hero-img-wrap {
+            position: relative;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .cm-hero-img-wrap img {
+            width: 100%; max-height: 580px; object-fit: contain;
+            filter: drop-shadow(0 30px 60px rgba(0,0,0,0.5));
+            position: relative; z-index: 1;
+        }
+        .cm-hero-img-wrap::after {
+            content: '';
+            position: absolute; bottom: -20px; left: 10%; right: 10%; height: 60px;
+            background: radial-gradient(ellipse, rgba(171,116,66,0.35) 0%, transparent 70%);
+        }
+
+        /* â”€â”€ Brew Style Filter â”€â”€ */
+        .cm-brew-tabs {
+            display: flex; justify-content: center; gap: 10px;
+            margin-bottom: 40px; flex-wrap: wrap;
+        }
+        .cm-brew-tab {
+            padding: 9px 24px; border-radius: 50px;
+            font-size: 0.85rem; font-weight: 600;
+            border: 2px solid #e5ddd4; color: #777;
+            cursor: pointer; background: #fff;
+            transition: all 0.22s ease;
+        }
+        .cm-brew-tab:hover,
+        .cm-brew-tab.active { border-color: var(--primary); color: var(--primary); background: var(--cm-cream); }
+
+        /* â”€â”€ Product Grid â”€â”€ */
+        .cm-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 22px;
+        }
+        @media (max-width: 1200px) { .cm-grid { grid-template-columns: repeat(3, 1fr); } }
+        @media (max-width: 768px)  { .cm-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 480px)  { .cm-grid { grid-template-columns: 1fr 1fr; gap: 12px; } }
+
+        .cm-card {
+            background: #fff; border: 1.5px solid #ede7dd;
+            border-radius: 16px; overflow: hidden;
+            transition: all 0.3s ease;
+            display: flex; flex-direction: column;
+        }
+        .cm-card:hover { border-color: var(--accent); box-shadow: 0 18px 48px rgba(171,116,66,0.14); transform: translateY(-5px); }
+        .cm-card-img-wrap {
+            background: var(--cm-cream); height: 200px;
+            display: flex; align-items: center; justify-content: center;
+            overflow: hidden; position: relative;
+        }
+        .cm-card-img-wrap img {
+            width: 100%; height: 100%; object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .cm-card:hover .cm-card-img-wrap img { transform: scale(1.06); }
+        .cm-card-tag {
+            position: absolute; top: 10px; left: 10px;
+            background: var(--cm-dark); color: #fff;
+            font-size: 0.65rem; font-weight: 700; letter-spacing: 0.07em;
+            text-transform: uppercase; padding: 3px 10px; border-radius: 50px;
+        }
+        .cm-card-tag.new-tag { background: var(--primary); }
+        .cm-card-body { padding: 16px 16px 20px; flex: 1; display: flex; flex-direction: column; }
+        .cm-card-model { font-size: 0.72rem; font-weight: 700; color: var(--primary); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 4px; }
+        .cm-card-name { font-size: 0.97rem; font-weight: 700; color: var(--dark); margin-bottom: 4px; line-height: 1.3; }
+        .cm-card-sub { font-size: 0.82rem; color: #888; margin-bottom: 12px; }
+        .cm-card-chips { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 14px; }
+        .cm-chip {
+            background: var(--cm-cream); color: #7a5a3a;
+            font-size: 0.65rem; font-weight: 600; padding: 3px 9px;
+            border-radius: 50px; border: 1px solid rgba(171,116,66,0.2);
+        }
+        .cm-enquire {
+            display: block; text-align: center; margin-top: auto;
+            padding: 9px 0; border: 2px solid var(--primary); border-radius: 8px;
+            color: var(--primary); font-size: 0.82rem; font-weight: 700;
+            text-decoration: none; transition: all 0.25s ease;
+        }
+        .cm-enquire:hover { background: var(--primary); color: #fff; }
+
+        /* â”€â”€ Coffee Mood Section â”€â”€ */
+        .cm-mood-section { background: var(--cm-dark); padding: 80px 0; }
+        .cm-mood-title {
+            font-family: 'Playfair Display', serif;
+            font-style: italic; color: #fff;
+            font-size: clamp(1.8rem, 3vw, 2.6rem); margin-bottom: 8px;
+        }
+        .cm-mood-title span { color: var(--accent); }
+        .cm-mood-card {
+            border-radius: 20px; overflow: hidden;
+            position: relative; height: 280px; cursor: pointer;
+        }
+        .cm-mood-card img {
+            width: 100%; height: 100%; object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .cm-mood-card:hover img { transform: scale(1.07); }
+        .cm-mood-card::after {
+            content: '';
+            position: absolute; inset: 0;
+            background: linear-gradient(to top, rgba(15,8,3,0.85) 0%, rgba(15,8,3,0.2) 60%, transparent 100%);
+        }
+        .cm-mood-label {
+            position: absolute; bottom: 24px; left: 24px;
+            z-index: 2; color: #fff;
+        }
+        .cm-mood-label span { display: block; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
+        .cm-mood-label h4 { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.5rem; font-weight: 700; color: #fff; margin: 0; }
+
+        /* â”€â”€ Features â”€â”€ */
+        .cm-feature-box {
+            padding: 32px 26px; border-radius: 16px;
+            border: 1.5px solid #ede7dd; background: #fff;
+            height: 100%; transition: box-shadow 0.3s ease;
+        }
+        .cm-feature-box:hover { box-shadow: 0 12px 32px rgba(171,116,66,0.12); border-color: var(--accent); }
+        .cm-feature-icon {
+            width: 54px; height: 54px; border-radius: 14px;
+            background: var(--cm-cream); display: flex; align-items: center; justify-content: center;
+            margin-bottom: 16px; font-size: 1.3rem; color: var(--primary);
+        }
+        .cm-feature-box h5 { font-size: 1rem; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
+        .cm-feature-box p { font-size: 0.87rem; color: #666; line-height: 1.65; margin: 0; }
+
+        /* â”€â”€ For Every Lover â”€â”€ */
+        .cm-tier-card {
+            border-radius: 20px; padding: 36px 30px; height: 100%;
+            border: 1.5px solid #ede7dd; background: #fff;
+            transition: all 0.3s ease;
+        }
+        .cm-tier-card:hover { transform: translateY(-6px); box-shadow: 0 22px 52px rgba(0,0,0,0.1); }
+        .cm-tier-card.featured { background: var(--cm-dark); border-color: var(--cm-dark); }
+        .cm-tier-card.featured h4,
+        .cm-tier-card.featured p,
+        .cm-tier-card.featured li { color: rgba(255,255,255,0.85) !important; }
+        .cm-tier-card.featured .cm-tier-series { color: var(--accent); }
+        .cm-tier-card.featured li::before { color: var(--accent); }
+        .cm-tier-series { font-size: 2.4rem; font-weight: 900; color: var(--primary); line-height: 1; font-family: 'Plus Jakarta Sans', sans-serif; margin-bottom: 4px; }
+        .cm-tier-label { font-size: 0.72rem; font-weight: 700; color: #999; letter-spacing: 0.1em; text-transform: uppercase; display: block; margin-bottom: 20px; }
+        .cm-tier-card h4 { font-size: 1.15rem; font-weight: 700; color: var(--dark); margin-bottom: 10px; }
+        .cm-tier-card p { font-size: 0.87rem; color: #666; line-height: 1.65; margin-bottom: 18px; }
+        .cm-tier-card ul { list-style: none; padding: 0; margin: 0; }
+        .cm-tier-card li { font-size: 0.85rem; color: #777; padding: 5px 0; display: flex; align-items: center; gap: 8px; }
+        .cm-tier-card li::before { content: 'âœ“'; color: var(--primary); font-weight: 700; flex-shrink: 0; }
+
+        /* â”€â”€ Cert strip â”€â”€ */
+        .cm-cert-strip { background: var(--cm-cream); padding: 44px 0; border-top: 1px solid rgba(171,116,66,0.15); border-bottom: 1px solid rgba(171,116,66,0.15); }
+        .cm-cert-badge {
+            width: 72px; height: 72px; border-radius: 50%;
+            background: #fff; display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            font-size: 0.85rem; font-weight: 800; color: var(--primary);
+            border: 2px solid rgba(171,116,66,0.25);
+        }
+        .cm-cert-name { font-size: 0.75rem; font-weight: 600; color: #666; text-align: center; }
+
+        /* â”€â”€ FAQ â”€â”€ */
+        .cm-faq .accordion-button { font-weight: 600; color: var(--dark); background: #fff; font-size: 0.95rem; }
+        .cm-faq .accordion-button:not(.collapsed) { color: var(--primary); background: var(--cm-cream); box-shadow: none; }
+        .cm-faq .accordion-item { border: 1px solid #e8dfd4; border-radius: 12px !important; overflow: hidden; margin-bottom: 10px; }
+        .cm-faq .accordion-body { font-size: 0.9rem; color: #666; line-height: 1.7; }
+
+        /* â”€â”€ CTA â”€â”€ */
+        .cm-cta { background: var(--cm-dark); padding: 80px 0; position: relative; overflow: hidden; }
+        .cm-cta::before {
+            content: '';
+            position: absolute; inset: 0;
+            background: url('Images/coffe-maker/page_47_img_1.png') center/cover no-repeat;
+            opacity: 0.12;
+        }
+        .cm-cta-inner { position: relative; z-index: 1; }
+        .cm-cta h2 {
+            font-family: 'Playfair Display', serif; font-style: italic;
+            font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 800; color: #fff;
+        }
+        .cm-cta h2 em { color: var(--accent); font-style: inherit; }
+        .cm-cta p { color: rgba(255,255,255,0.6); font-size: 1.05rem; }
+        .btn-cm-white { background: #fff; color: var(--primary); font-weight: 700; padding: 14px 36px; border-radius: 50px; border: none; transition: all 0.25s ease; }
+        .btn-cm-white:hover { background: var(--cm-cream); color: var(--primary); }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Topbar -->
+    <div class="topbar d-none d-lg-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fas fa-map-marker-alt" style="color: var(--primary-light);"></i>
+                            <span>D-142, Sector 63, Noida, U.P.</span>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fas fa-clock" style="color: var(--primary-light);"></i>
+                            <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-end">
+                    <div class="d-flex align-items-center justify-content-end gap-3">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fas fa-phone-alt" style="color: var(--primary-light);"></i>
+                            <span>+91 XXXXX XXXXX</span>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fas fa-envelope" style="color: var(--primary-light);"></i>
+                            <span>info@santoshmfg.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top p-0" style="background: var(--cm-dark);">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0" style="color:#fff;">Santosh<span style="color:var(--accent);"> Manufacturing</span></h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="products.html" class="nav-item nav-link active">Products</a>
+            </div>
+            <a href="contact.html" class="nav-cta d-flex">Get In Touch <i class="fa fa-arrow-right ms-2"></i></a>
+        </div>
+    </nav>
+
+
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+         HERO
+    â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <section class="cm-hero">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                    <span class="cm-hero-badge"><i class="fas fa-mug-hot me-1"></i> MK-Series Â· 850Wâ€“1350W Â· 15â€“20 Bar</span>
+                    <h1 class="cm-hero-title">
+                        Your Daily CafÃ©,<br><span class="script-accent">Now at Home.</span>
+                    </h1>
+                    <p class="cm-hero-desc">Premium MK-Series Espresso Coffee Makers â€” 15 to 20 bar pressure, 1.8L detachable water tank, steam wand for cappuccino &amp; latte. Classic, Digital Touch &amp; Premium variants for every counter.</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="contact.html" class="btn btn-primary btn-lg">Enquire Now <i class="fas fa-arrow-right ms-2"></i></a>
+                        <a href="#coffee" class="btn btn-lg" style="border: 2px solid rgba(255,255,255,0.3); color: #fff; background: transparent;">View All Models</a>
+                    </div>
+                    <div class="cm-hero-stats">
+                        <div class="cm-hero-stat"><strong>15â€“20</strong><span>Bar Pressure</span></div>
+                        <div class="cm-hero-stat"><strong>1.8L</strong><span>Water Tank</span></div>
+                        <div class="cm-hero-stat"><strong>20+</strong><span>MK Models</span></div>
+                        <div class="cm-hero-stat"><strong>7+</strong><span>Certifications</span></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
+                    <div class="cm-hero-img-wrap">
+                        <img src="Images/coffe-maker/page_1_img_1.png" alt="MK-Series Espresso Coffee Makers â€” Santosh Manufacturing">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+         COFFEE MOOD â€” Choose Your Brew Style
+    â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <section class="cm-mood-section">
+        <div class="container">
+            <div class="text-center mb-5 wow fadeInUp">
+                <p style="color: rgba(255,255,255,0.45); font-size:0.8rem; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; margin-bottom:12px;">Brewing Perfection</p>
+                <h2 class="cm-mood-title">Choose your <span>Brew Style</span></h2>
+                <p style="color:rgba(255,255,255,0.5); max-width:480px; margin:0 auto; font-size:0.95rem;">Start with what you love to drink â€” every MK-Series machine delivers cafÃ©-quality results at home.</p>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.05s">
+                    <div class="cm-mood-card">
+                        <img src="Images/coffe-maker/page_8_img_1.png" alt="Espresso">
+                        <div class="cm-mood-label">
+                            <span>Classic &amp; Rich</span>
+                            <h4>Espresso Shot</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="cm-mood-card">
+                        <img src="Images/coffe-maker/page_2_img_1.png" alt="Cappuccino">
+                        <div class="cm-mood-label">
+                            <span>Creamy &amp; Frothy</span>
+                            <h4>Cappuccino</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.15s">
+                    <div class="cm-mood-card">
+                        <img src="Images/coffe-maker/page_3_img_1.png" alt="Latte">
+                        <div class="cm-mood-label">
+                            <span>Smooth &amp; Milky</span>
+                            <h4>CafÃ© Latte</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+         ALL MODELS â€” Find Your Machine
+    â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <section id="coffee" class="section-padding" style="background: #fff;">
+        <div class="container">
+            <div class="section-title text-center wow fadeInUp">
+                <div class="subtitle justify-content-center">MK-Series Range</div>
+                <h2>Find Your Perfect Machine</h2>
+                <p>From colourful retro classics to full digital touch-screen models â€” every MK machine delivers 15â€“20 bar espresso perfection.</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="cm-brew-tabs wow fadeInUp" data-wow-delay="0.1s">
+                <button class="cm-brew-tab active" onclick="filterCoffee('all', this)">All Models</button>
+                <button class="cm-brew-tab" onclick="filterCoffee('classic', this)">Classic / Retro</button>
+                <button class="cm-brew-tab" onclick="filterCoffee('digital', this)">Digital Touch</button>
+                <button class="cm-brew-tab" onclick="filterCoffee('stainless', this)">Stainless Steel</button>
+                <button class="cm-brew-tab" onclick="filterCoffee('new', this)">New Arrivals</button>
+            </div>
+
+            <div class="cm-grid">
+
+                <!-- MK-818 Classic Retro -->
+                <div class="cm-card wow fadeInUp" data-wow-delay="0.05s" data-type="classic">
+                    <div class="cm-card-img-wrap">
+                        <span class="cm-card-tag">Classic</span>
+                        <img src="Images/coffe-maker/page_2_img_1.png" alt="MK-818 Espresso Coffee Maker">
+                    </div>
+                    <div class="cm-card-body">
+                        <p class="cm-card-model">Model MK-818</p>
+                        <h5 class="cm-card-name">Retro Espresso Maker</h5>
+                        <p class="cm-card-sub">1.8L Â· 850W Â· 4 Colour Variants</p>
+                        <div class="cm-card-chips">
+                            <span class="cm-chip">15â€“20 Bar</span>
+                            <span class="cm-chip">Steam Wand</span>
+                            <span class="cm-chip">CB &amp; CE</span>
+                        </div>
+                        <a href="contact.html" class="cm-enquire">Enquire Now</a>
+                    </div>
+                </div>
+
+                <!-- MK-858 Classic Gauge -->
+                <div class="cm-card wow fadeInUp" data-wow-delay="0.1s" data-type="classic">
+                    <div class="cm-card-img-wrap">
+                        <span class="cm-card-tag">Classic</span>
+                        <img src="Images/coffe-maker/page_3_img_1.png" alt="MK-858 Espresso Coffee Maker">
+                    </div>
+                    <div class="cm-card-body">
+                        <p class="cm-card-model">Model MK-858</p>
+                        <h5 class="cm-card-name">Classic with Gauge</h5>
+                        <p class="cm-card-sub">1.8L Â· 850W Â· 5 Colour Variants</p>
+                        <div class="cm-card-chips">
+                            <span class="cm-chip">Pressure Gauge</span>
+                            <span class="cm-chip">15â€“20 Bar</span>
+                            <span class="cm-chip">CE</span>
+                        </div>
+                        <a href="contact.html" class="cm-enquire">Enquire Now</a>
+                    </div>
+                </div>
+
+                <!-- MK-868 Digital -->
+                <div class="cm-card wow fadeInUp" data-wow-delay="0.15s" data-type="digital">
+                    <div class="cm-card-img-wrap">
+                        <span class="cm-card-tag">Digital</span>
+                        <img src="Images/coffe-maker/page_4_img_1.png" alt="MK-868 Espresso Coffee Maker">
+                    </div>
+                    <div class="cm-card-body">
+                        <p class="cm-card-model">Model MK-868</p>
+                        <h5 class="cm-card-name">Slim Digital Espresso</h5>
+                        <p class="cm-card-sub">1.8L Â· 850W Â· Black &amp; White</p>
+                        <div class="cm-card-chips">
+                            <span class="cm-chip">Touch Controls</span>
+                            <span class="cm-chip">15â€“20 Bar</span>
+                            <span class="cm-chip">CB &amp; CE</span>
+                        </div>
+                        <a href="contact.html" class="cm-enquire">Enquire Now</a>
+                    </div>
+                </div>
+
+                <!-- MK-918G Stainless -->
+                <div class="cm-card wow fadeInUp" data-wow-delay="0.2s" data-type="stainless">
+                    <div class="cm-card-img-wrap">
+                        <span class="cm-card-tag">Stainless</span>
+                        <img src="Images/coffe-maker/page_5_img_1.png" alt="MK-918G Stainless Espresso">
+                    </div>
+                    <div class="cm-card-body">
+                        <p class="cm-card-model">Model MK-918G</p>
+                        <h5 class="cm-card-name">Stainless Espresso Maker</h5>
+                        <p class="cm-card-sub">1.8L Â· 850W Â· SS Body</p>
+                        <div class="cm-card-chips">
+                            <span class="cm-chip">15â€“20 Bar</span>
+                            <span class="cm-chip">SS Finish</span>
+                            <span class="cm-chip">CE Â· LFGB</span>
+                        </div>
+                        <a href="contact.html" class="cm-enquire">Enquire Now</a>
+                    </div>
+                </div>
+
+                <!-- MK-958G Stainless Gauge -->
+                <div class="cm-card wow fadeInUp" data-wow-delay="0.05s" data-type="stainless">
+                    <div class="cm-card-img-wrap">
+                        <span class="cm-card-tag">Stainless</span>
+                        <img src="Images/coffe-maker/page_6_img_1.png" alt="MK-958G Stainless Gauge">
+                    </div>
+                    <div class="cm-card-body">
+                        <p class="cm-card-model">Model MK-958G</p>
+                        <h5 class="cm-card-name">SS with Pressure Gauge</h5>
+                        <p class="cm-card-sub">1.8L Â· 850W Â· SS Body</p>
+                        <div class="cm-card-chips">
+                            <span class="cm-chip">Pressure Gauge</span>
+                            <span class="cm-chip">15â€“20 Bar</span>
+                            <span class="cm-chip">CE Â· BSCI</span>
+                        </div>
+                        <a href="contact.html" class="cm-enquire">Enquire Now</a>
+                    </div>
+                </div>
+
+                <!-- MK-968G Digital + Glass Tank -->
+                <div class="cm-card wow fadeInUp" data-wow-delay="0.1s" data-type="digital">
+                    <div class="cm-card-img-wrap">
+                        <span class="cm-card-tag">Digital</span>
+                        <img src="Images/coffe-maker/page_7_img_1.png" alt="MK-968G Digital Glass Tank">
+                    </div>
+                    <div class="cm-card-body">
+                        <p class="cm-card-model">Model MK-968G</p>
+                        <h5 class="cm-card-name">Digital with Glass Tank</h5>
+                        <p class="cm-card-sub">1.8L Â· 850W Â· Visible Water Tank</p>
+                        <div class="cm-card-chips">
+                            <span class="cm-chip">Glass Tank</span>
+                            <span class="cm-chip">15â€“20 Bar</span>
+                            <span class="cm-chip">CB Â· CE</span>
+                        </div>
+                        <a href="contact.html" class="cm-enquire">Enquire Now</a>
+                    </div>
+                </div>
+
+                <!-- MK-968GSM Full Touch Screen -->
+                <div class="cm-card wow fadeInUp" data-wow-delay="0.15s" data-type="digital">
+                    <div class="cm-card-img-wrap">
+                        <span class="cm-card-tag">Digital</span>
+                        <img src="Images/coffe-maker/page_8_img_1.png" alt="MK-968GSM Full Touch Screen">
+                    </div>
+                    <div class="cm-card-body">
+                        <p class="cm-card-model">Model MK-968GSM</p>
+                        <h5 class="cm-card-name">Full Touch Screen</h5>
+                        <p class="cm-card-sub">1.8L Â· 850W Â· Full Digital Display</p>
+                        <div class="cm-card-chips">
+                            <span class="cm-chip">Touch Screen</span>
+                            <span class="cm-chip">20 Bar</span>
+                            <span class="cm-chip">CB Â· CE Â· LFGB</span>
+                        </div>
+                        <a href="contact.html" class="cm-enquire">Enquire Now</a>
+                    </div>
+                </div>
+
+                <!-- MK-878G Black Premium -->
+                <div class="cm-card wow fadeInUp" data-wow-delay="0.2s" data-type="digital">
+                    <div class="cm-card-img-wrap">
+                        <span class="cm-card-tag">Digital</span>
+                        <img src="Images/coffe-maker/page_12_img_1.png" alt="MK-878G Black Premium">
+                    </div>
+                    <div class="cm-card-body">
+                        <p class="cm-card-model">Model MK-878G</p>
+                        <h5 class="cm-card-name">Black Premium Espresso</h5>
+                        <p class="cm-card-sub">1.8L Â· 850W Â· All-Black Design</p>
+                        <div class="cm-card-chips">
+                            <span class="cm-chip">15â€“20 Bar</span>
+                            <span class="cm-chip">Steam Wand</span>
+                            <span class="cm-chip">CE Â· RoHS</span>
+                        </div>
+                        <a href="contact.html" class="cm-enquire">Enquire Now</a>
+                    </div>
+                </div>
+
+                <!-- MK-899G Round Display -->
+                <div class="cm-card wow fadeInUp" data-wow-delay="0.05s" data-type="digital">
+                    <div class="cm-card-img-wrap">
+                        <span class="cm-card-tag">Digital</span>
+                        <img src="Images/coffe-maker/page_15_img_1.png" alt="MK-899G Round Digital Display">
+                    </div>
+                    <div class="cm-card-body">
+                        <p class="cm-card-model">Model MK-899G</p>
+                        <h5 class="cm-card-name">Round Digital Display</h5>
+                        <p class="cm-card-sub">1.8L Â· 850W Â· Circular LCD</p>
+                        <div class="cm-card-chips">
+                            <span class="cm-chip">Round Display</span>
+                            <span class="cm-chip">15â€“20 Bar</span>
+                            <span class="cm-chip">CB Â· CE</span>
+                        </div>
+                        <a href="contact.html" class="cm-enquire">Enquire Now</a>
+                    </div>
+                </div>
+
+                <!-- MK-756G NEW -->
+                <div class="cm-card wow fadeInUp" data-wow-delay="0.1s" data-type="new">
+                    <div class="cm-card-img-wrap">
+                        <span class="cm-card-tag new-tag">New</span>
+                        <img src="Images/coffe-maker/page_30_img_1.png" alt="MK-756G New Model">
+                    </div>
+                    <div class="cm-card-body">
+                        <p class="cm-card-model">Model MK-756G</p>
+                        <h5 class="cm-card-name">New â€” Gauge + Black SS</h5>
+                        <p class="cm-card-sub">1.8L Â· 850W Â· Black + Stainless</p>
+                        <div class="cm-card-chips">
+                            <span class="cm-chip">Pressure Gauge</span>
+                            <span class="cm-chip">15â€“20 Bar</span>
+                            <span class="cm-chip">CE Â· LFGB</span>
+                        </div>
+                        <a href="contact.html" class="cm-enquire">Enquire Now</a>
+                    </div>
+                </div>
+
+                <!-- MK-718 NEW 1350W -->
+                <div class="cm-card wow fadeInUp" data-wow-delay="0.15s" data-type="new">
+                    <div class="cm-card-img-wrap">
+                        <span class="cm-card-tag new-tag">New</span>
+                        <img src="Images/coffe-maker/page_40_img_1.png" alt="MK-718 1350W Premium">
+                    </div>
+                    <div class="cm-card-body">
+                        <p class="cm-card-model">Model MK-718</p>
+                        <h5 class="cm-card-name">Premium 1350W Digital</h5>
+                        <p class="cm-card-sub">1.3L Â· 1350W Â· High Power</p>
+                        <div class="cm-card-chips">
+                            <span class="cm-chip">1350W</span>
+                            <span class="cm-chip">15â€“20 Bar</span>
+                            <span class="cm-chip">CB Â· CE Â· LFGB</span>
+                        </div>
+                        <a href="contact.html" class="cm-enquire">Enquire Now</a>
+                    </div>
+                </div>
+
+                <!-- MK-525N NEW Round Display -->
+                <div class="cm-card wow fadeInUp" data-wow-delay="0.2s" data-type="new">
+                    <div class="cm-card-img-wrap">
+                        <span class="cm-card-tag new-tag">New</span>
+                        <img src="Images/coffe-maker/page_45_img_1.png" alt="MK-525N Premium Round Display">
+                    </div>
+                    <div class="cm-card-body">
+                        <p class="cm-card-model">Model MK-525N</p>
+                        <h5 class="cm-card-name">Premium Round Display</h5>
+                        <p class="cm-card-sub">1.2L Â· 1350W Â· Milk Carafe 1L</p>
+                        <div class="cm-card-chips">
+                            <span class="cm-chip">1350W</span>
+                            <span class="cm-chip">Milk Carafe</span>
+                            <span class="cm-chip">CB Â· CE Â· LFGB</span>
+                        </div>
+                        <a href="contact.html" class="cm-enquire">Enquire Now</a>
+                    </div>
+                </div>
+
+            </div><!-- /cm-grid -->
+        </div>
+    </section>
+
+
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+         FEATURES â€” Coffee Machines, Simplified
+    â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <section class="section-padding" style="background: var(--cm-cream);">
+        <div class="container">
+            <div class="section-title text-center wow fadeInUp">
+                <div class="subtitle justify-content-center">Why MK-Series</div>
+                <h2>Coffee Machines, Simplified</h2>
+                <p>Professional cafÃ© performance â€” engineered for every home and commercial counter</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.05s">
+                    <div class="cm-feature-box">
+                        <div class="cm-feature-icon"><i class="fas fa-tachometer-alt"></i></div>
+                        <h5>15â€“20 Bar Pressure</h5>
+                        <p>High-pressure pump extracts rich crema and full-bodied espresso from every shot â€” just like your favourite cafÃ©.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="cm-feature-box">
+                        <div class="cm-feature-icon"><i class="fas fa-blender"></i></div>
+                        <h5>Steam Wand for Frothing</h5>
+                        <p>Detachable frothing nozzle creates silky micro-foam milk for cappuccinos, lattes, and flat whites at home.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.15s">
+                    <div class="cm-feature-box">
+                        <div class="cm-feature-icon"><i class="fas fa-tint"></i></div>
+                        <h5>1.8L Detachable Tank</h5>
+                        <p>Transparent removable water tank lets you refill without moving the machine â€” and monitor water level at a glance.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="cm-feature-box">
+                        <div class="cm-feature-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h5>Safety Auto-Shutoff</h5>
+                        <p>Built-in overheat and overpressure protection device keeps the machine â€” and your kitchen â€” safe at all times.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.25s">
+                    <div class="cm-feature-box">
+                        <div class="cm-feature-icon"><i class="fas fa-layer-group"></i></div>
+                        <h5>Pod &amp; Ground Compatible</h5>
+                        <p>Works with both ESE coffee pods and ground coffee â€” aluminium alloy dual-filter holder for maximum flexibility.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="cm-feature-box">
+                        <div class="cm-feature-icon"><i class="fas fa-fire"></i></div>
+                        <h5>Cup Warming Plate</h5>
+                        <p>Stainless steel cup mat on top preheats cups before brewing â€” every sip stays at the perfect serving temperature.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+         FOR EVERY COFFEE LOVER
+    â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <section class="section-padding" style="background: #fff;">
+        <div class="container">
+            <div class="section-title text-center wow fadeInUp">
+                <div class="subtitle justify-content-center">Model Guide</div>
+                <h2>For Every Coffee Lover</h2>
+                <p>Three tiers to match every preference, budget, and counter space</p>
+            </div>
+            <div class="row g-4">
+
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.05s">
+                    <div class="cm-tier-card">
+                        <div class="cm-tier-series">Classic</div>
+                        <span class="cm-tier-label">Entry â€” MK-818 Â· MK-858 Â· MK-919</span>
+                        <h4>Retro Style, Real Espresso</h4>
+                        <p>Colourful retro designs with 15â€“20 bar pump. Available in multiple colours â€” ideal for dealers seeking high shelf appeal.</p>
+                        <ul>
+                            <li>Multiple colour variants</li>
+                            <li>15 or 20 bar pump</li>
+                            <li>Pressure gauge option</li>
+                            <li>Steam wand included</li>
+                            <li>850W Â· 1.8L tank</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="cm-tier-card featured">
+                        <div class="cm-tier-series">Digital</div>
+                        <span class="cm-tier-label">Mid-Range â€” Bestseller Series</span>
+                        <h4>Touch Controls, Premium Look</h4>
+                        <p>Digital touch panels, LED displays, and glass water tanks. The most popular range for modern kitchen aesthetics.</p>
+                        <ul>
+                            <li>Digital touch control panel</li>
+                            <li>LED / full-screen display</li>
+                            <li>Glass tank visibility</li>
+                            <li>20 bar precision pump</li>
+                            <li>850W Â· 1.8L tank</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.15s">
+                    <div class="cm-tier-card">
+                        <div class="cm-tier-series">Premium</div>
+                        <span class="cm-tier-label">New Arrivals â€” 1350W Series</span>
+                        <h4>High Power, Smart Brewing</h4>
+                        <p>1350W high-power models with round digital displays and built-in milk carafe for fully automated cappuccino.</p>
+                        <ul>
+                            <li>1350W high power</li>
+                            <li>Round digital display</li>
+                            <li>Built-in milk carafe</li>
+                            <li>Compact footprint</li>
+                            <li>CB Â· CE Â· LFGB certified</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+         CERTIFICATIONS
+    â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <div class="cm-cert-strip">
+        <div class="container">
+            <p class="text-center mb-4" style="font-size:0.8rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#999;">Quality &amp; Safety Certifications</p>
+            <div class="row g-3 justify-content-center">
+                <div class="col-auto text-center"><div class="cm-cert-badge">CB</div><p class="cm-cert-name">CB</p></div>
+                <div class="col-auto text-center"><div class="cm-cert-badge">CE</div><p class="cm-cert-name">CE Mark</p></div>
+                <div class="col-auto text-center"><div class="cm-cert-badge">BSCI</div><p class="cm-cert-name">BSCI</p></div>
+                <div class="col-auto text-center"><div class="cm-cert-badge">EMC</div><p class="cm-cert-name">EMC</p></div>
+                <div class="col-auto text-center"><div class="cm-cert-badge">ERP</div><p class="cm-cert-name">ERP</p></div>
+                <div class="col-auto text-center"><div class="cm-cert-badge">RoHS</div><p class="cm-cert-name">RoHS</p></div>
+                <div class="col-auto text-center"><div class="cm-cert-badge">LFGB</div><p class="cm-cert-name">LFGB</p></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+         FAQ
+    â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <section class="section-padding" style="background: #fff;">
+        <div class="container">
+            <div class="row g-5 align-items-start">
+                <div class="col-lg-4 wow fadeInLeft">
+                    <div class="section-title">
+                        <div class="subtitle">Got Questions?</div>
+                        <h2>Frequently Asked Questions</h2>
+                        <p>Everything you need to know about the MK-Series and becoming a dealer.</p>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary mt-2">Talk to Our Team <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+                <div class="col-lg-8 wow fadeInRight" data-wow-delay="0.1s">
+                    <div class="accordion cm-faq" id="cmFaq">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#cf1">
+                                    What models are available in the MK-Series?
+                                </button>
+                            </h2>
+                            <div id="cf1" class="accordion-collapse collapse show" data-bs-parent="#cmFaq">
+                                <div class="accordion-body">
+                                    The MK-Series includes over 20 models across Classic (MK-818, MK-858, MK-919), Digital Touch (MK-868, MK-968G, MK-968GSM, MK-878G, MK-899G), Stainless (MK-918G, MK-958G), and Premium/New Arrivals (MK-756G, MK-718, MK-525N, MK-526N).
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cf2">
+                                    What is the bar pressure and power rating?
+                                </button>
+                            </h2>
+                            <div id="cf2" class="accordion-collapse collapse" data-bs-parent="#cmFaq">
+                                <div class="accordion-body">
+                                    All standard MK models operate at 15 or 20 bar pressure with 850W power and a 1.8L detachable water tank. The premium new-arrival models (MK-718, MK-525N) are rated at 1350W with a 1.3Lâ€“1.2L tank.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cf3">
+                                    Can the machine use both pods and ground coffee?
+                                </button>
+                            </h2>
+                            <div id="cf3" class="accordion-collapse collapse" data-bs-parent="#cmFaq">
+                                <div class="accordion-body">
+                                    Yes. All MK-Series machines feature an aluminium alloy dual-filter holder compatible with both ESE coffee pods and ground coffee, giving users maximum brewing flexibility.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cf4">
+                                    What certifications do the coffee makers carry?
+                                </button>
+                            </h2>
+                            <div id="cf4" class="accordion-collapse collapse" data-bs-parent="#cmFaq">
+                                <div class="accordion-body">
+                                    The MK-Series is certified to CB, CE, BSCI, EMC, ERP, RoHS, and LFGB standards â€” ensuring international safety, environmental compliance, and food-grade safety requirements are met.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cf5">
+                                    What accessories are included with each machine?
+                                </button>
+                            </h2>
+                            <div id="cf5" class="accordion-collapse collapse" data-bs-parent="#cmFaq">
+                                <div class="accordion-body">
+                                    Every MK-Series machine ships with a Filter Holder, Spoon with Tamper, and 1 or 2-Cup Filter. Selected models include a milk froth jug and additional accessories.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cf6">
+                                    What is the minimum order quantity for dealers?
+                                </button>
+                            </h2>
+                            <div id="cf6" class="accordion-collapse collapse" data-bs-parent="#cmFaq">
+                                <div class="accordion-body">
+                                    MOQ varies by model and region. Standard carton packs are 4 units per carton. Please contact us directly to discuss dealer pricing, MOQ, and distribution terms across your territory.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cf7">
+                                    Do you supply across India?
+                                </button>
+                            </h2>
+                            <div id="cf7" class="accordion-collapse collapse" data-bs-parent="#cmFaq">
+                                <div class="accordion-body">
+                                    Yes. We serve dealers, distributors, and wholesalers across PAN India from our corporate office in Noida, U.P. We offer competitive B2B pricing and after-sales support to all our partners.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cf8">
+                                    How do I become an authorised dealer?
+                                </button>
+                            </h2>
+                            <div id="cf8" class="accordion-collapse collapse" data-bs-parent="#cmFaq">
+                                <div class="accordion-body">
+                                    Fill out the dealer inquiry form on our <a href="contact.html" style="color:var(--primary);font-weight:600;">Contact page</a> with your business details and preferred product range. Our team responds within 24 hours to discuss territory, pricing, and dealership terms.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+         BOTTOM CTA
+    â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <section class="cm-cta">
+        <div class="container text-center cm-cta-inner">
+            <p style="color:rgba(255,255,255,0.45); font-size:0.78rem; letter-spacing:0.15em; text-transform:uppercase; margin-bottom:16px; font-weight:600;">B2B Partnership Â· Pan India</p>
+            <h2 class="mb-3">
+                Bring cafÃ©-quality espresso<br>
+                <em>to every home you serve.</em>
+            </h2>
+            <p class="mb-5" style="max-width:520px; margin:0 auto 36px;">Partner with Santosh Manufacturing for wholesale pricing on our complete MK-Series espresso coffee maker range â€” 20+ models, certified quality.</p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="contact.html" class="btn-cm-white btn btn-lg">Get B2B Quote <i class="fas fa-arrow-right ms-2"></i></a>
+                <a href="products.html" class="btn btn-outline-light btn-lg">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+         FOOTER
+    â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h5>Santosh Manufacturing</h5>
+                    <p class="footer-about">Santosh Manufacturing Units Pvt Ltd â€” manufacturer and importer of Home Appliances, Decorative Lighting (POWERLAM), Interior Decor Solutions, and Plywood. Serving dealers across India since 2001.</p>
+                    <div class="social-links mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Quick Links</h5>
+                    <div class="footer-links">
+                        <a href="index.html"><i class="fas fa-chevron-right"></i> Home</a>
+                        <a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a>
+                        <a href="products.html"><i class="fas fa-chevron-right"></i> Products</a>
+                        <a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>MK-Series Models</h5>
+                    <div class="footer-links">
+                        <a href="#coffee"><i class="fas fa-chevron-right"></i> Classic â€” MK-818, MK-858</a>
+                        <a href="#coffee"><i class="fas fa-chevron-right"></i> Digital â€” MK-868, MK-968G</a>
+                        <a href="#coffee"><i class="fas fa-chevron-right"></i> Stainless â€” MK-918G, MK-958G</a>
+                        <a href="#coffee"><i class="fas fa-chevron-right"></i> Premium â€” MK-718, MK-525N</a>
+                        <a href="air-fryers.html"><i class="fas fa-chevron-right"></i> Air Fryers</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Contact Info</h5>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> D-142, Sector 63, Noida, U.P.</p>
+                        <p><i class="fas fa-phone-alt"></i> +91 XXXXX XXXXX</p>
+                        <p><i class="fas fa-envelope"></i> info@santoshmfg.com</p>
+                        <p><i class="fas fa-clock"></i> Mon - Sat: 9AM - 6PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        &copy; 2025 <a href="#">Santosh Manufacturing</a>. All Rights Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+                        GST: 09ABJCS3272R1ZG
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        function filterCoffee(type, btn) {
+            document.querySelectorAll('.cm-brew-tab').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            document.querySelectorAll('.cm-card').forEach(card => {
+                card.style.display = (type === 'all' || card.dataset.type === type) ? '' : 'none';
+            });
+        }
+    </script>
+</body>
+
+</html>
+

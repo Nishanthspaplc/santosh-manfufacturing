@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Air Fryers | Santosh Manufacturing — F-Series Catalog</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="air fryer wholesale India, dual basket air fryer, oven air fryer, B2B dealer, CB CE BSCI certified" name="keywords">
+    <meta content="Santosh Manufacturing F-Series Air Fryers — Dual Basket, Single Basket, Oven Style & Classic Round. 5L–15L, CB, CE, BSCI certified. B2B wholesale pan India." name="description">
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        :root {
+            --af-dark:  #0f1215;
+            --af-cream: #faf7f3;
+            --af-cream2:#f2ece3;
+        }
+
+        /* Hero */
+        .af-hero { min-height: 90vh; background: var(--af-dark); display: flex; align-items: center; position: relative; overflow: hidden; }
+        .af-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 70% 50%, rgba(171,116,66,0.16) 0%, transparent 60%), radial-gradient(ellipse at 20% 80%, rgba(100,60,10,0.2) 0%, transparent 50%); }
+        .af-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(171,116,66,0.18); color: var(--accent); border: 1px solid rgba(171,116,66,0.3); font-size: 0.73rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 6px 18px; border-radius: 50px; margin-bottom: 22px; }
+        .af-hero-title { font-family: 'Plus Jakarta Sans',sans-serif; font-weight: 900; font-size: clamp(2.6rem,5vw,4.2rem); color: #fff; line-height: 1.1; margin-bottom: 20px; }
+        .af-hero-title span { color: var(--accent); }
+        .af-hero-desc { color: rgba(255,255,255,0.6); font-size: 1rem; line-height: 1.75; max-width: 480px; margin-bottom: 30px; }
+        .af-stats { display: flex; gap: 24px; flex-wrap: wrap; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 28px; }
+        .af-stat strong { display: block; font-size: 1.5rem; font-weight: 900; color: var(--accent); line-height: 1; }
+        .af-stat span { font-size: 0.7rem; color: rgba(255,255,255,0.45); font-weight: 500; margin-top: 3px; display: block; }
+        .af-hero-img { width: 100%; max-height: 560px; object-fit: contain; filter: drop-shadow(0 30px 70px rgba(0,0,0,0.5)); }
+
+        /* Filter tabs */
+        .af-filter { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin-bottom: 44px; }
+        .af-tab { padding: 9px 22px; border-radius: 50px; cursor: pointer; font-size: 0.83rem; font-weight: 600; border: 2px solid #e5ddd4; color: #888; background: #fff; transition: all 0.2s ease; }
+        .af-tab:hover, .af-tab.active { border-color: var(--primary); color: var(--primary); background: var(--af-cream); }
+
+        /* Product grid */
+        .af-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; }
+        @media (max-width:1200px) { .af-grid { grid-template-columns: repeat(3,1fr); } }
+        @media (max-width:768px)  { .af-grid { grid-template-columns: repeat(2,1fr); } }
+        @media (max-width:460px)  { .af-grid { grid-template-columns: 1fr 1fr; gap: 12px; } }
+
+        .af-card { background: #fff; border: 1.5px solid #ede7de; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column; transition: all 0.3s ease; }
+        .af-card:hover { border-color: var(--accent); box-shadow: 0 16px 48px rgba(171,116,66,0.16); transform: translateY(-5px); }
+        .af-card-img { background: var(--af-cream); height: 210px; overflow: hidden; display: flex; align-items: center; justify-content: center; position: relative; }
+        .af-card-img img { width: 100%; height: 100%; object-fit: contain; padding: 14px; transition: transform 0.4s ease; }
+        .af-card:hover .af-card-img img { transform: scale(1.08); }
+        .af-card-tag { position: absolute; top: 10px; left: 10px; background: var(--af-dark); color: #fff; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; padding: 3px 10px; border-radius: 50px; }
+        .af-card-tag.new-tag { background: var(--primary); }
+        .af-card-body { padding: 15px 15px 18px; flex: 1; display: flex; flex-direction: column; }
+        .af-card-cat  { font-size: 0.68rem; font-weight: 700; color: var(--primary); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 3px; }
+        .af-card-name { font-size: 0.94rem; font-weight: 700; color: var(--dark); margin-bottom: 3px; line-height: 1.3; }
+        .af-card-sub  { font-size: 0.8rem; color: #999; margin-bottom: 10px; }
+        .af-chips { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 12px; }
+        .af-chip { background: var(--af-cream); color: #7a5a3a; font-size: 0.63rem; font-weight: 600; padding: 3px 8px; border-radius: 50px; border: 1px solid rgba(171,116,66,0.2); }
+        .af-enquire { display: block; text-align: center; margin-top: auto; padding: 9px; border: 2px solid var(--primary); border-radius: 8px; color: var(--primary); font-size: 0.8rem; font-weight: 700; text-decoration: none; transition: all 0.22s ease; }
+        .af-enquire:hover { background: var(--primary); color: #fff; }
+
+        /* Lifestyle section */
+        .af-life { background: var(--af-dark); padding: 80px 0; }
+        .af-life-card { border-radius: 20px; overflow: hidden; height: 300px; position: relative; cursor: pointer; }
+        .af-life-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+        .af-life-card:hover img { transform: scale(1.06); }
+        .af-life-card::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,8,5,0.82) 0%, rgba(10,8,5,0.1) 60%, transparent 100%); }
+        .af-life-label { position: absolute; bottom: 22px; left: 22px; z-index: 2; }
+        .af-life-label span { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); display: block; margin-bottom: 4px; }
+        .af-life-label h4 { font-size: 1.2rem; font-weight: 700; color: #fff; margin: 0; }
+
+        /* Features */
+        .af-feat { padding: 28px 24px; border-radius: 16px; border: 1.5px solid #ede7dd; background: #fff; height: 100%; transition: all 0.3s ease; }
+        .af-feat:hover { box-shadow: 0 12px 32px rgba(171,116,66,0.12); border-color: var(--accent); }
+        .af-feat-icon { width: 50px; height: 50px; border-radius: 13px; background: var(--af-cream); display: flex; align-items: center; justify-content: center; margin-bottom: 14px; font-size: 1.2rem; color: var(--primary); }
+        .af-feat h5 { font-size: 0.97rem; font-weight: 700; color: var(--dark); margin-bottom: 7px; }
+        .af-feat p  { font-size: 0.85rem; color: #666; line-height: 1.65; margin: 0; }
+
+        /* Certifications */
+        .af-cert-strip { background: var(--af-cream); padding: 44px 0; border-top: 1px solid rgba(171,116,66,0.15); border-bottom: 1px solid rgba(171,116,66,0.15); }
+        .af-cert-badge { width: 68px; height: 68px; border-radius: 50%; background: #fff; display: flex; align-items: center; justify-content: center; margin: 0 auto 8px; box-shadow: 0 4px 14px rgba(0,0,0,0.07); font-size: 0.82rem; font-weight: 800; color: var(--primary); border: 2px solid rgba(171,116,66,0.25); }
+        .af-cert-name { font-size: 0.72rem; font-weight: 600; color: #888; text-align: center; }
+
+        /* FAQ */
+        .af-faq .accordion-button { font-weight: 600; color: var(--dark); font-size: 0.94rem; }
+        .af-faq .accordion-button:not(.collapsed) { color: var(--primary); background: var(--af-cream); box-shadow: none; }
+        .af-faq .accordion-item { border: 1px solid #e8dfd4; border-radius: 12px !important; overflow: hidden; margin-bottom: 10px; }
+        .af-faq .accordion-body { font-size: 0.88rem; color: #666; line-height: 1.7; }
+
+        /* CTA */
+        .af-cta { background: var(--af-dark); padding: 80px 0; position: relative; overflow: hidden; }
+        .af-cta::before { content: ''; position: absolute; inset: 0; background: url('Images/coffe-maker/page_49_img_6.png') center/cover no-repeat; opacity: 0.08; }
+        .af-cta-inner { position: relative; z-index: 1; }
+        .af-cta h2 { font-family: 'Plus Jakarta Sans',sans-serif; font-weight: 900; font-size: clamp(1.8rem,3.5vw,2.8rem); color: #fff; }
+        .af-cta h2 span { color: var(--accent); }
+        .af-cta p { color: rgba(255,255,255,0.55); font-size: 1rem; }
+        .btn-af-light { background: #fff; color: var(--primary); font-weight: 700; padding: 14px 36px; border-radius: 50px; border: none; transition: all 0.22s ease; }
+        .btn-af-light:hover { background: var(--af-cream); color: var(--primary); }
+    </style>
+</head>
+
+<body>
+
+<!-- Spinner -->
+<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-grow text-primary" style="width:3rem;height:3rem;" role="status"><span class="sr-only">Loading...</span></div>
+</div>
+
+<!-- Topbar -->
+<div class="topbar d-none d-lg-block">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <div class="d-flex align-items-center gap-4">
+                    <div class="d-flex align-items-center gap-2"><i class="fas fa-map-marker-alt" style="color:var(--primary-light);"></i><span>D-142, Sector 63, Noida, U.P.</span></div>
+                    <div class="separator"></div>
+                    <div class="d-flex align-items-center gap-2"><i class="fas fa-clock" style="color:var(--primary-light);"></i><span>Mon – Sat: 9:00 AM – 6:00 PM</span></div>
+                </div>
+            </div>
+            <div class="col-lg-5 text-end">
+                <div class="d-flex align-items-center justify-content-end gap-3">
+                    <div class="d-flex align-items-center gap-2"><i class="fas fa-phone-alt" style="color:var(--primary-light);"></i><span>+91 XXXXX XXXXX</span></div>
+                    <div class="separator"></div>
+                    <div class="d-flex align-items-center gap-2"><i class="fas fa-envelope" style="color:var(--primary-light);"></i><span>info@santoshmfg.com</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top p-0" style="background:var(--af-dark);">
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <h2 class="m-0" style="color:#fff;">Santosh<span style="color:var(--accent);"> Manufacturing</span></h2>
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="products.html" class="nav-item nav-link active">Products</a>
+        </div>
+        <a href="contact.html" class="nav-cta d-flex">Get In Touch <i class="fa fa-arrow-right ms-2"></i></a>
+    </div>
+</nav>
+
+
+<!-- ══════ HERO ══════ -->
+<section class="af-hero">
+    <div class="container py-5" style="position:relative;z-index:1;">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                <span class="af-badge"><i class="fas fa-fire me-1"></i> F-Series · 5L–15L · Dual &amp; Single Basket</span>
+                <h1 class="af-hero-title">Fry Smarter.<br><span>Zero Compromise.</span></h1>
+                <p class="af-hero-desc">F-Series Air Fryers — from compact 5L retro models to 15L oven-style units. Dual basket, stainless steel, glass window and classic round variants. CB, CE, BSCI certified.</p>
+                <div class="d-flex gap-3 flex-wrap">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Enquire Now <i class="fas fa-arrow-right ms-2"></i></a>
+                    <a href="#products" class="btn btn-lg" style="border:2px solid rgba(255,255,255,0.25);color:#fff;background:transparent;">Browse Models</a>
+                </div>
+                <div class="af-stats">
+                    <div class="af-stat"><strong>5–15L</strong><span>Capacity Range</span></div>
+                    <div class="af-stat"><strong>14+</strong><span>Model Variants</span></div>
+                    <div class="af-stat"><strong>360°</strong><span>Hot Air Circulation</span></div>
+                    <div class="af-stat"><strong>6</strong><span>Certifications</span></div>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center wow fadeInRight" data-wow-delay="0.2s">
+                <img src="Images/coffe-maker/page_49_img_6.png" alt="F-Series Air Fryers lineup" class="af-hero-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ══════ PRODUCT GRID ══════ -->
+<section id="products" class="section-padding" style="background:#fff;">
+    <div class="container">
+        <div class="section-title text-center wow fadeInUp">
+            <div class="subtitle justify-content-center">F-Series Range</div>
+            <h2>Complete Air Fryer Catalog</h2>
+            <p>Dual basket, single basket, oven-style, and classic round — a model for every counter and every buyer</p>
+        </div>
+
+        <div class="af-filter wow fadeInUp" data-wow-delay="0.1s">
+            <button class="af-tab active" onclick="filterAF('all',this)">All Models</button>
+            <button class="af-tab" onclick="filterAF('dual',this)">Dual Basket</button>
+            <button class="af-tab" onclick="filterAF('single',this)">Single Basket</button>
+            <button class="af-tab" onclick="filterAF('oven',this)">Oven Style</button>
+            <button class="af-tab" onclick="filterAF('classic',this)">Classic Round</button>
+        </div>
+
+        <div class="af-grid">
+
+            <div class="af-card wow fadeInUp" data-wow-delay="0.05s" data-type="dual">
+                <div class="af-card-img"><span class="af-card-tag">Dual Basket</span><img src="Images/coffe-maker/page_49_img_2.png" alt="Dual Basket Air Fryer White"></div>
+                <div class="af-card-body">
+                    <p class="af-card-cat">F-Series Dual</p>
+                    <h5 class="af-card-name">Dual Basket Air Fryer</h5>
+                    <p class="af-card-sub">White — 2 dishes simultaneously</p>
+                    <div class="af-chips"><span class="af-chip">Dual Compartment</span><span class="af-chip">Digital Touch</span><span class="af-chip">CB · CE</span></div>
+                    <a href="contact.html" class="af-enquire">Enquire Now</a>
+                </div>
+            </div>
+
+            <div class="af-card wow fadeInUp" data-wow-delay="0.1s" data-type="dual">
+                <div class="af-card-img"><span class="af-card-tag">Dual Basket</span><img src="Images/coffe-maker/page_49_img_3.png" alt="Dual Basket Air Fryer Black"></div>
+                <div class="af-card-body">
+                    <p class="af-card-cat">F-Series Dual</p>
+                    <h5 class="af-card-name">Dual Basket Air Fryer</h5>
+                    <p class="af-card-sub">Black — 2 dishes simultaneously</p>
+                    <div class="af-chips"><span class="af-chip">Dual Compartment</span><span class="af-chip">Digital Touch</span><span class="af-chip">CB · CE</span></div>
+                    <a href="contact.html" class="af-enquire">Enquire Now</a>
+                </div>
+            </div>
+
+            <div class="af-card wow fadeInUp" data-wow-delay="0.15s" data-type="dual">
+                <div class="af-card-img"><span class="af-card-tag">Dual Basket</span><img src="Images/coffe-maker/page_49_img_4.png" alt="Dual Basket Air Fryer Gray"></div>
+                <div class="af-card-body">
+                    <p class="af-card-cat">F-Series Dual</p>
+                    <h5 class="af-card-name">Dual Basket Air Fryer</h5>
+                    <p class="af-card-sub">Gray — 2 dishes simultaneously</p>
+                    <div class="af-chips"><span class="af-chip">Dual Compartment</span><span class="af-chip">Digital Touch</span><span class="af-chip">BSCI · CE</span></div>
+                    <a href="contact.html" class="af-enquire">Enquire Now</a>
+                </div>
+            </div>
+
+            <div class="af-card wow fadeInUp" data-wow-delay="0.2s" data-type="dual">
+                <div class="af-card-img"><span class="af-card-tag new-tag">New</span><img src="Images/coffe-maker/page_50_img_4.png" alt="Dual Level Air Fryer Black Gold"></div>
+                <div class="af-card-body">
+                    <p class="af-card-cat">F-Series Dual</p>
+                    <h5 class="af-card-name">Dual Level Fryer</h5>
+                    <p class="af-card-sub">Black + Gold — 2-tier cooking drawer</p>
+                    <div class="af-chips"><span class="af-chip">2-Tier</span><span class="af-chip">Gold Accents</span><span class="af-chip">CB · CE</span></div>
+                    <a href="contact.html" class="af-enquire">Enquire Now</a>
+                </div>
+            </div>
+
+            <div class="af-card wow fadeInUp" data-wow-delay="0.05s" data-type="single">
+                <div class="af-card-img"><span class="af-card-tag">Single Basket</span><img src="Images/coffe-maker/page_51_img_3.png" alt="Single Basket Air Fryer Black"></div>
+                <div class="af-card-body">
+                    <p class="af-card-cat">F-Series Single</p>
+                    <h5 class="af-card-name">Square Air Fryer</h5>
+                    <p class="af-card-sub">Black + Gold — Standard basket</p>
+                    <div class="af-chips"><span class="af-chip">10L</span><span class="af-chip">Digital Touch</span><span class="af-chip">CB · CE</span></div>
+                    <a href="contact.html" class="af-enquire">Enquire Now</a>
+                </div>
+            </div>
+
+            <div class="af-card wow fadeInUp" data-wow-delay="0.1s" data-type="single">
+                <div class="af-card-img"><span class="af-card-tag">Glass Window</span><img src="Images/coffe-maker/page_52_img_3.png" alt="Single Basket Glass Window"></div>
+                <div class="af-card-body">
+                    <p class="af-card-cat">F-Series Single</p>
+                    <h5 class="af-card-name">Square AF — Glass Window</h5>
+                    <p class="af-card-sub">Black + Gold — Watch food cook</p>
+                    <div class="af-chips"><span class="af-chip">10L</span><span class="af-chip">Viewing Window</span><span class="af-chip">CB · CE</span></div>
+                    <a href="contact.html" class="af-enquire">Enquire Now</a>
+                </div>
+            </div>
+
+            <div class="af-card wow fadeInUp" data-wow-delay="0.15s" data-type="single">
+                <div class="af-card-img"><span class="af-card-tag">Stainless Steel</span><img src="Images/coffe-maker/page_53_img_3.png" alt="Stainless Steel Air Fryer"></div>
+                <div class="af-card-body">
+                    <p class="af-card-cat">F-Series Single</p>
+                    <h5 class="af-card-name">Stainless Steel AF</h5>
+                    <p class="af-card-sub">SS + Black — Brushed premium finish</p>
+                    <div class="af-chips"><span class="af-chip">12L</span><span class="af-chip">SS Body</span><span class="af-chip">CB · CE · BSCI</span></div>
+                    <a href="contact.html" class="af-enquire">Enquire Now</a>
+                </div>
+            </div>
+
+            <div class="af-card wow fadeInUp" data-wow-delay="0.2s" data-type="single">
+                <div class="af-card-img"><span class="af-card-tag">Stainless Steel</span><img src="Images/coffe-maker/page_54_img_3.png" alt="SS Glass Window Air Fryer"></div>
+                <div class="af-card-body">
+                    <p class="af-card-cat">F-Series Single</p>
+                    <h5 class="af-card-name">SS AF — Glass Window</h5>
+                    <p class="af-card-sub">SS + Glass — See-through cooking</p>
+                    <div class="af-chips"><span class="af-chip">12L</span><span class="af-chip">SS + Glass</span><span class="af-chip">CB · CE · BSCI</span></div>
+                    <a href="contact.html" class="af-enquire">Enquire Now</a>
+                </div>
+            </div>
+
+            <div class="af-card wow fadeInUp" data-wow-delay="0.05s" data-type="oven">
+                <div class="af-card-img"><span class="af-card-tag new-tag">Oven Style</span><img src="Images/coffe-maker/page_55_img_2.png" alt="Oven Style Air Fryer White"></div>
+                <div class="af-card-body">
+                    <p class="af-card-cat">F-Series Oven</p>
+                    <h5 class="af-card-name">Air Fryer Oven — White</h5>
+                    <p class="af-card-sub">White — Large full glass door</p>
+                    <div class="af-chips"><span class="af-chip">15L</span><span class="af-chip">Full Glass Door</span><span class="af-chip">CB · CE</span></div>
+                    <a href="contact.html" class="af-enquire">Enquire Now</a>
+                </div>
+            </div>
+
+            <div class="af-card wow fadeInUp" data-wow-delay="0.1s" data-type="classic">
+                <div class="af-card-img"><span class="af-card-tag">Classic Round</span><img src="Images/coffe-maker/page_56_img_3.png" alt="Round Air Fryer Black Gold"></div>
+                <div class="af-card-body">
+                    <p class="af-card-cat">F-Series Classic</p>
+                    <h5 class="af-card-name">Classic Round AF</h5>
+                    <p class="af-card-sub">Black + Gold — Traditional basket</p>
+                    <div class="af-chips"><span class="af-chip">5L</span><span class="af-chip">Digital Panel</span><span class="af-chip">CB · CE</span></div>
+                    <a href="contact.html" class="af-enquire">Enquire Now</a>
+                </div>
+            </div>
+
+            <div class="af-card wow fadeInUp" data-wow-delay="0.15s" data-type="classic">
+                <div class="af-card-img"><span class="af-card-tag">Classic Round</span><img src="Images/coffe-maker/page_56_img_4.png" alt="Round Air Fryer Red Gold"></div>
+                <div class="af-card-body">
+                    <p class="af-card-cat">F-Series Classic</p>
+                    <h5 class="af-card-name">Classic Round AF</h5>
+                    <p class="af-card-sub">Red + Gold — Vibrant colour variant</p>
+                    <div class="af-chips"><span class="af-chip">5L</span><span class="af-chip">Digital Panel</span><span class="af-chip">CB · CE</span></div>
+                    <a href="contact.html" class="af-enquire">Enquire Now</a>
+                </div>
+            </div>
+
+            <div class="af-card wow fadeInUp" data-wow-delay="0.2s" data-type="classic">
+                <div class="af-card-img"><span class="af-card-tag">Oval Glass</span><img src="Images/coffe-maker/page_57_img_3.png" alt="Oval Glass Air Fryer Black"></div>
+                <div class="af-card-body">
+                    <p class="af-card-cat">F-Series Classic</p>
+                    <h5 class="af-card-name">Oval AF — Glass Front</h5>
+                    <p class="af-card-sub">Black + Gold — Oval glass window</p>
+                    <div class="af-chips"><span class="af-chip">6L</span><span class="af-chip">Glass Front</span><span class="af-chip">CB · CE</span></div>
+                    <a href="contact.html" class="af-enquire">Enquire Now</a>
+                </div>
+            </div>
+
+            <div class="af-card wow fadeInUp" data-wow-delay="0.05s" data-type="classic">
+                <div class="af-card-img"><span class="af-card-tag">Oval Glass</span><img src="Images/coffe-maker/page_57_img_4.png" alt="Oval Glass Air Fryer White"></div>
+                <div class="af-card-body">
+                    <p class="af-card-cat">F-Series Classic</p>
+                    <h5 class="af-card-name">Oval AF — Glass Front</h5>
+                    <p class="af-card-sub">White + Gold — Oval glass window</p>
+                    <div class="af-chips"><span class="af-chip">6L</span><span class="af-chip">Glass Front</span><span class="af-chip">CB · CE</span></div>
+                    <a href="contact.html" class="af-enquire">Enquire Now</a>
+                </div>
+            </div>
+
+            <div class="af-card wow fadeInUp" data-wow-delay="0.1s" data-type="classic">
+                <div class="af-card-img"><span class="af-card-tag">Retro</span><img src="Images/coffe-maker/page_60_img_2.png" alt="Retro Air Fryer White"></div>
+                <div class="af-card-body">
+                    <p class="af-card-cat">F-Series Classic</p>
+                    <h5 class="af-card-name">Retro Knob Air Fryer</h5>
+                    <p class="af-card-sub">White + Gold — Compact retro style</p>
+                    <div class="af-chips"><span class="af-chip">5L</span><span class="af-chip">Knob Control</span><span class="af-chip">CB · CE</span></div>
+                    <a href="contact.html" class="af-enquire">Enquire Now</a>
+                </div>
+            </div>
+
+            <div class="af-card wow fadeInUp" data-wow-delay="0.15s" data-type="classic">
+                <div class="af-card-img"><span class="af-card-tag">Retro</span><img src="Images/coffe-maker/page_60_img_3.png" alt="Retro Air Fryer Black"></div>
+                <div class="af-card-body">
+                    <p class="af-card-cat">F-Series Classic</p>
+                    <h5 class="af-card-name">Retro Knob Air Fryer</h5>
+                    <p class="af-card-sub">Black + Gold — Compact retro style</p>
+                    <div class="af-chips"><span class="af-chip">5L</span><span class="af-chip">Knob Control</span><span class="af-chip">CB · CE</span></div>
+                    <a href="contact.html" class="af-enquire">Enquire Now</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ══════ LIFESTYLE ══════ -->
+<section class="af-life">
+    <div class="container">
+        <div class="text-center mb-5 wow fadeInUp">
+            <p style="color:rgba(255,255,255,0.4);font-size:0.75rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:10px;">Every Meal, Perfected</p>
+            <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:900;color:#fff;font-size:clamp(1.8rem,3vw,2.6rem);">Air Fry. <span style="color:var(--accent);">Every Occasion.</span></h2>
+            <p style="color:rgba(255,255,255,0.5);max-width:460px;margin:0 auto;font-size:0.93rem;">From quick weeknight dinners to weekend feasts — the F-Series handles it all with zero compromise.</p>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-5 wow fadeInLeft" data-wow-delay="0.05s">
+                <div class="af-life-card" style="height:360px;">
+                    <img src="Images/coffe-maker/page_57_img_2.png" alt="Healthy Air Fryer Cooking">
+                    <div class="af-life-label"><span>Healthy &amp; Delicious</span><h4>Oil-Free Frying</h4></div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="row g-3">
+                    <div class="col-12 wow fadeInRight" data-wow-delay="0.1s">
+                        <div class="af-life-card" style="height:170px;">
+                            <img src="Images/coffe-maker/page_52_img_2.png" alt="Air Fryer in Modern Kitchen">
+                            <div class="af-life-label"><span>Modern Kitchen</span><h4>Fits Every Counter</h4></div>
+                        </div>
+                    </div>
+                    <div class="col-12 wow fadeInRight" data-wow-delay="0.15s">
+                        <div class="af-life-card" style="height:170px;">
+                            <img src="Images/coffe-maker/page_58_img_2.png" alt="Air Fryer Family Meals">
+                            <div class="af-life-label"><span>Family Meals</span><h4>Fresh Food, Fast</h4></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ══════ FEATURES ══════ -->
+<section class="section-padding" style="background:var(--af-cream);">
+    <div class="container">
+        <div class="section-title text-center wow fadeInUp">
+            <div class="subtitle justify-content-center">Why F-Series</div>
+            <h2>Built for Every Kitchen</h2>
+            <p>Technology and design that delivers restaurant-quality results at home</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.05s">
+                <div class="af-feat"><div class="af-feat-icon"><i class="fas fa-wind"></i></div><h5>360° Rapid Air Circulation</h5><p>Powerful hot air surrounds food from all sides — crispier results with up to 80% less oil than deep frying.</p></div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="af-feat"><div class="af-feat-icon"><i class="fas fa-layer-group"></i></div><h5>Dual Basket Technology</h5><p>Cook two different dishes at different temperatures simultaneously — perfect for complete meals in one go.</p></div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.15s">
+                <div class="af-feat"><div class="af-feat-icon"><i class="fas fa-eye"></i></div><h5>Glass Viewing Window</h5><p>Watch your food cook in real time without opening the drawer — no heat loss, no guesswork.</p></div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="af-feat"><div class="af-feat-icon"><i class="fas fa-sliders-h"></i></div><h5>Digital Touch Control</h5><p>Intuitive LED touch panels with preset cooking modes — fry, bake, roast, grill, and dehydrate at a touch.</p></div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.25s">
+                <div class="af-feat"><div class="af-feat-icon"><i class="fas fa-shield-alt"></i></div><h5>Auto Safety Shutoff</h5><p>Built-in overheat protection and auto-off timer ensure safe, unattended cooking every time.</p></div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="af-feat"><div class="af-feat-icon"><i class="fas fa-star"></i></div><h5>Non-Stick Basket Coating</h5><p>Food-grade PFOA-free non-stick basket for effortless cooking and easy clean-up after every meal.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ══════ CERTIFICATIONS ══════ -->
+<div class="af-cert-strip">
+    <div class="container">
+        <p class="text-center mb-4" style="font-size:0.75rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#aaa;">Quality &amp; Safety Certifications</p>
+        <div class="row g-3 justify-content-center">
+            <div class="col-auto text-center"><div class="af-cert-badge">CB</div><p class="af-cert-name">CB</p></div>
+            <div class="col-auto text-center"><div class="af-cert-badge">CE</div><p class="af-cert-name">CE Mark</p></div>
+            <div class="col-auto text-center"><div class="af-cert-badge">BSCI</div><p class="af-cert-name">BSCI</p></div>
+            <div class="col-auto text-center"><div class="af-cert-badge">EMC</div><p class="af-cert-name">EMC</p></div>
+            <div class="col-auto text-center"><div class="af-cert-badge">ERP</div><p class="af-cert-name">ERP</p></div>
+            <div class="col-auto text-center"><div class="af-cert-badge">RoHS</div><p class="af-cert-name">RoHS</p></div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ══════ FAQ ══════ -->
+<section class="section-padding" style="background:#fff;">
+    <div class="container">
+        <div class="row g-5 align-items-start">
+            <div class="col-lg-4 wow fadeInLeft">
+                <div class="section-title">
+                    <div class="subtitle">Got Questions?</div>
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Everything you need to know about the F-Series and becoming a dealer.</p>
+                </div>
+                <a href="contact.html" class="btn btn-primary mt-2">Talk to Our Team <i class="fas fa-arrow-right ms-2"></i></a>
+            </div>
+            <div class="col-lg-8 wow fadeInRight" data-wow-delay="0.1s">
+                <div class="accordion af-faq" id="afFaq">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#af1">What capacity range does the F-Series cover?</button></h2>
+                        <div id="af1" class="accordion-collapse collapse show" data-bs-parent="#afFaq">
+                            <div class="accordion-body">The F-Series covers 5L compact retro models up to 15L oven-style units. Single basket models range from 5L–12L, dual basket models from 8L–14L combined, and oven-style models up to 15L.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#af2">What is the difference between Dual Basket and Single Basket?</button></h2>
+                        <div id="af2" class="accordion-collapse collapse" data-bs-parent="#afFaq">
+                            <div class="accordion-body">Dual Basket models have two separate compartments that cook at independent temperatures simultaneously — ideal for complete meals. Single Basket models offer one large cooking basket in standard black, stainless steel, or glass window variants.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#af3">Are the baskets dishwasher-safe?</button></h2>
+                        <div id="af3" class="accordion-collapse collapse" data-bs-parent="#afFaq">
+                            <div class="accordion-body">Yes. All F-Series baskets feature a PFOA-free non-stick coating and are fully dishwasher-safe. The basket and tray detach completely from the unit.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#af4">What certifications do the air fryers carry?</button></h2>
+                        <div id="af4" class="accordion-collapse collapse" data-bs-parent="#afFaq">
+                            <div class="accordion-body">All F-Series models are certified to CB, CE, BSCI, EMC, ERP, and RoHS standards — meeting international safety, electromagnetic compatibility, and environmental requirements.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#af5">What is the MOQ for dealers?</button></h2>
+                        <div id="af5" class="accordion-collapse collapse" data-bs-parent="#afFaq">
+                            <div class="accordion-body">Standard carton packs are 2–4 units depending on the model. Please contact us to discuss dealer pricing, MOQ, and territory distribution terms.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#af6">Do you supply across all of India?</button></h2>
+                        <div id="af6" class="accordion-collapse collapse" data-bs-parent="#afFaq">
+                            <div class="accordion-body">Yes. We supply dealers, distributors, and wholesalers across PAN India from our base in Noida, U.P. Competitive B2B pricing and after-sales support for all partners.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ══════ CTA ══════ -->
+<section class="af-cta">
+    <div class="container text-center af-cta-inner">
+        <p style="color:rgba(255,255,255,0.4);font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:14px;font-weight:600;">B2B Partnership · Pan India</p>
+        <h2 class="mb-3">Become an Authorised<br><span>F-Series Air Fryer Dealer</span></h2>
+        <p class="mb-4" style="max-width:500px;margin:0 auto 32px;">Stock the complete F-Series range — 14+ models, 5L to 15L, certified for global standards. Contact us for wholesale pricing and dealership terms.</p>
+        <div class="d-flex gap-3 justify-content-center flex-wrap">
+            <a href="contact.html" class="btn-af-light btn btn-lg">Get B2B Quote <i class="fas fa-arrow-right ms-2"></i></a>
+            <a href="coffee-maker.html" class="btn btn-outline-light btn-lg">View Coffee Makers</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-6">
+                <h5>Santosh Manufacturing</h5>
+                <p class="footer-about">Santosh Manufacturing Units Pvt Ltd — manufacturer and importer of Home Appliances, Decorative Lighting, Interior Decor Solutions, and Plywood. Serving dealers across India.</p>
+                <div class="social-links mt-3">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h5>Quick Links</h5>
+                <div class="footer-links">
+                    <a href="index.html"><i class="fas fa-chevron-right"></i> Home</a>
+                    <a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a>
+                    <a href="products.html"><i class="fas fa-chevron-right"></i> Products</a>
+                    <a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5>F-Series Models</h5>
+                <div class="footer-links">
+                    <a href="#products"><i class="fas fa-chevron-right"></i> Dual Basket</a>
+                    <a href="#products"><i class="fas fa-chevron-right"></i> Single Basket</a>
+                    <a href="#products"><i class="fas fa-chevron-right"></i> Stainless Steel</a>
+                    <a href="#products"><i class="fas fa-chevron-right"></i> Oven Style</a>
+                    <a href="#products"><i class="fas fa-chevron-right"></i> Classic Round</a>
+                    <a href="coffee-maker.html"><i class="fas fa-chevron-right"></i> Coffee Makers</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5>Contact Info</h5>
+                <div class="footer-contact">
+                    <p><i class="fas fa-map-marker-alt"></i> D-142, Sector 63, Noida, U.P.</p>
+                    <p><i class="fas fa-phone-alt"></i> +91 XXXXX XXXXX</p>
+                    <p><i class="fas fa-envelope"></i> info@santoshmfg.com</p>
+                    <p><i class="fas fa-clock"></i> Mon – Sat: 9AM – 6PM</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">&copy; 2025 <a href="#">Santosh Manufacturing</a>. All Rights Reserved.</div>
+                <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">GST: 09ABJCS3272R1ZG</div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+    function filterAF(type, btn) {
+        document.querySelectorAll('.af-tab').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        document.querySelectorAll('.af-card').forEach(card => {
+            card.style.display = (type === 'all' || card.dataset.type === type) ? '' : 'none';
+        });
+    }
+</script>
+</body>
+</html>
