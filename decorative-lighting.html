@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Decorative Lighting | POWERLAM Brand | Santosh Manufacturing</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="POWERLAM decorative lighting, ceiling lights, pendant lights, wall lights, chandeliers, outdoor lights, LED fixtures, Amazon, Flipkart" name="keywords">
+    <meta content="POWERLAM Decorative Lighting by Santosh Manufacturing — ceiling lights, pendant lights, wall lights, chandeliers, outdoor lights & LED fixtures for residential, hospitality and commercial spaces. Available on Amazon & Flipkart." name="description">
+
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .brand-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(171,116,66,0.08);
+            border: 1px solid rgba(171,116,66,0.25);
+            border-radius: 50px;
+            padding: 8px 20px;
+            font-size: 0.875rem;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        .ecom-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 1.5px solid currentColor;
+        }
+        .ecom-amazon { color: #FF9900; border-color: #FF9900; background: rgba(255,153,0,0.06); }
+        .ecom-flipkart { color: #2874F0; border-color: #2874F0; background: rgba(40,116,240,0.06); }
+        .ecom-other { color: var(--gray); border-color: var(--border); background: var(--light); }
+        .benefit-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 28px 24px;
+            height: 100%;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+        }
+        .benefit-card:hover {
+            border-color: var(--primary);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-4px);
+        }
+        .benefit-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 12px;
+            background: rgba(171,116,66,0.1);
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            margin-bottom: 16px;
+        }
+        .application-card {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            height: 280px;
+        }
+        .application-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .application-card:hover img { transform: scale(1.05); }
+        .application-card .overlay-label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 30px 24px 24px;
+            background: linear-gradient(to top, rgba(30,20,10,0.85) 0%, transparent 100%);
+            color: #fff;
+        }
+        .application-card .overlay-label h5 { color: #fff; margin: 0; font-size: 1.1rem; }
+        .application-card .overlay-label p { color: rgba(255,255,255,0.75); margin: 4px 0 0; font-size: 0.85rem; line-height: 1.5; }
+        .product-type-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+            height: 100%;
+        }
+        .product-type-card:hover {
+            border-color: var(--primary);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-4px);
+        }
+        .product-type-card .img-wrap {
+            height: 220px;
+            overflow: hidden;
+        }
+        .product-type-card .img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .product-type-card:hover .img-wrap img { transform: scale(1.05); }
+        .product-type-card .card-body { padding: 20px; }
+        .product-type-card h5 { font-size: 1rem; margin-bottom: 6px; }
+        .product-type-card p { font-size: 0.875rem; margin: 0; }
+        .stats-strip {
+            background: var(--dark);
+            padding: 48px 0;
+        }
+        .stat-item { text-align: center; }
+        .stat-item .num { font-size: 2.2rem; font-weight: 800; color: var(--accent); line-height: 1; }
+        .stat-item .label { font-size: 0.85rem; color: rgba(255,255,255,0.65); margin-top: 6px; }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Topbar -->
+    <div class="topbar d-none d-lg-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fas fa-map-marker-alt" style="color: var(--primary-light);"></i>
+                            <span>D-142, Sector 63, Noida, U.P.</span>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fas fa-clock" style="color: var(--primary-light);"></i>
+                            <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-end">
+                    <div class="d-flex align-items-center justify-content-end gap-3">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fas fa-phone-alt" style="color: var(--primary-light);"></i>
+                            <span>+91 XXXXX XXXXX</span>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fas fa-envelope" style="color: var(--primary-light);"></i>
+                            <span>info@santoshmfg.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0">Santosh<span> Manufacturing</span></h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="products.html" class="nav-item nav-link active">Products</a>
+            </div>
+            <a href="contact.html" class="nav-cta d-flex">Get In Touch <i class="fa fa-arrow-right ms-2"></i></a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1 class="wow fadeInDown">Decorative Lighting</h1>
+            <p class="text-white-50 mt-2 mb-3 wow fadeInUp" style="max-width: 520px;">Modern lighting solutions for residential, hospitality & commercial spaces — under the POWERLAM brand.</p>
+            <nav aria-label="breadcrumb" class="wow fadeInUp">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="products.html">Products</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Decorative Lighting</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+
+    <!-- Brand Hero Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInLeft">
+                    <img class="rounded-xl w-100"
+                        src="https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?auto=format&fit=crop&w=800&q=80"
+                        alt="POWERLAM Decorative Lighting"
+                        style="height: 500px; object-fit: cover;">
+                </div>
+                <div class="col-lg-6 wow fadeInRight">
+                    <div class="brand-badge">
+                        <i class="fas fa-bolt"></i> Brand: POWERLAM
+                    </div>
+                    <div class="section-title mb-3">
+                        <h2 style="margin-bottom: 8px;">Modern Decorative Lighting Solutions for Every Space</h2>
+                    </div>
+                    <p class="mb-3">Our POWERLAM decorative lighting portfolio includes ceiling lights, pendant lights, wall lights, chandeliers, outdoor lights and contemporary LED fixtures — suitable for residential, hospitality, and commercial applications.</p>
+                    <p class="mb-4">Through our nationwide dealer and distributor network and direct-to-consumer e-commerce presence, POWERLAM brings quality lighting solutions to every corner of India.</p>
+
+                    <!-- E-commerce availability -->
+                    <p class="fw-medium mb-3" style="font-size: 0.85rem; color: var(--gray); text-transform: uppercase; letter-spacing: 0.06em;">Available On</p>
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="ecom-badge ecom-amazon"><i class="fab fa-amazon"></i> Amazon</span>
+                        <span class="ecom-badge ecom-flipkart"><i class="fas fa-shopping-bag"></i> Flipkart</span>
+                        <span class="ecom-badge ecom-other"><i class="fas fa-store"></i> Other Major Platforms</span>
+                    </div>
+
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="contact.html" class="btn btn-primary">Dealer Inquiry <i class="fas fa-arrow-right ms-2"></i></a>
+                        <a href="contact.html" class="btn btn-outline-primary">Download Catalogue <i class="fas fa-file-pdf ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Stats Strip -->
+    <div class="stats-strip">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <div class="num">6+</div>
+                        <div class="label">Product Categories</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <div class="num">3</div>
+                        <div class="label">Application Segments</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <div class="num">Pan India</div>
+                        <div class="label">Distribution Network</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <div class="num">ISO</div>
+                        <div class="label">Certified Products</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Product Categories Grid -->
+    <section class="section-padding" style="background: var(--light);">
+        <div class="container">
+            <div class="section-title text-center">
+                <div class="subtitle"><i class="fas fa-lightbulb" style="font-size: 0.7rem;"></i> Product Range</div>
+                <h2>Our Lighting Categories</h2>
+                <p style="max-width: 520px; margin: 0 auto;">A complete range of decorative lighting solutions — from dramatic chandeliers to subtle wall accents — for every interior and exterior requirement.</p>
+            </div>
+            <div class="row g-4">
+
+                <!-- Ceiling Lights -->
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="product-type-card">
+                        <div class="img-wrap">
+                            <img src="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?auto=format&fit=crop&w=600&q=80" alt="Ceiling Lights">
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag">POWERLAM</span>
+                            <h5>Ceiling Lights</h5>
+                            <p>Flush and semi-flush ceiling fixtures for living rooms, offices, and commercial spaces — modern designs with efficient LED technology.</p>
+                            <a href="contact.html" class="card-link mt-3 d-inline-flex align-items-center gap-1">Inquire <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pendant Lights -->
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="product-type-card">
+                        <div class="img-wrap">
+                            <img src="https://images.unsplash.com/photo-1513506003901-1e6a35549435?auto=format&fit=crop&w=600&q=80" alt="Pendant Lights">
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag">POWERLAM</span>
+                            <h5>Pendant Lights</h5>
+                            <p>Hanging pendant lights for dining areas, kitchen islands, and accent spaces — available in multiple finishes and styles.</p>
+                            <a href="contact.html" class="card-link mt-3 d-inline-flex align-items-center gap-1">Inquire <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wall Lights -->
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="product-type-card">
+                        <div class="img-wrap">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80" alt="Wall Lights">
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag">POWERLAM</span>
+                            <h5>Wall Lights</h5>
+                            <p>Decorative sconces and wall-mounted fixtures for corridors, bedrooms, hospitality lobbies, and feature walls.</p>
+                            <a href="contact.html" class="card-link mt-3 d-inline-flex align-items-center gap-1">Inquire <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chandeliers -->
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="product-type-card">
+                        <div class="img-wrap">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Chandeliers">
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag">POWERLAM</span>
+                            <h5>Chandeliers</h5>
+                            <p>Statement chandeliers for banquet halls, hotel lobbies, high-end residences, and commercial showrooms — dramatic and elegant designs.</p>
+                            <a href="contact.html" class="card-link mt-3 d-inline-flex align-items-center gap-1">Inquire <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Outdoor Lights -->
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="product-type-card">
+                        <div class="img-wrap">
+                            <img src="https://images.unsplash.com/photo-1517942240694-b11e54e0960d?auto=format&fit=crop&w=600&q=80" alt="Outdoor Lights">
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag">POWERLAM</span>
+                            <h5>Outdoor Lights</h5>
+                            <p>Weather-resistant outdoor lighting for facades, gardens, pathways, and commercial exteriors — durable and stylish.</p>
+                            <a href="contact.html" class="card-link mt-3 d-inline-flex align-items-center gap-1">Inquire <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contemporary LED Fixtures -->
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="product-type-card">
+                        <div class="img-wrap">
+                            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80" alt="Contemporary LED Fixtures">
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag">POWERLAM</span>
+                            <h5>Contemporary LED Fixtures</h5>
+                            <p>Modern LED panel lights, strip lights, and designer fixtures combining energy efficiency with contemporary aesthetics.</p>
+                            <a href="contact.html" class="card-link mt-3 d-inline-flex align-items-center gap-1">Inquire <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Lighting Range Gallery -->
+    <section style="padding: 0 0 80px;">
+        <div class="container">
+            <div class="section-title text-center mb-4">
+                <div class="subtitle">Installed Spaces</div>
+                <h2>POWERLAM Lighting in Action</h2>
+                <p style="max-width: 480px; margin: 0 auto;">See how POWERLAM lighting transforms residential, hospitality, and commercial spaces.</p>
+            </div>
+        </div>
+        <!-- Full-width 4-column gallery strip -->
+        <div class="row g-2 mx-0">
+            <div class="col-6 col-md-3 px-1">
+                <div style="position: relative; border-radius: var(--radius); overflow: hidden; height: 320px;">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80"
+                        alt="[REPLACE: POWERLAM wall light installed in a living room or corridor]"
+                        style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;"
+                        onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+                    <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(20,12,4,0.75) 0%, transparent 50%);"></div>
+                    <div style="position: absolute; bottom: 20px; left: 20px; color: #fff;">
+                        <h5 style="color: #fff; margin: 0; font-size: 1rem;">Wall Lights</h5>
+                        <p style="color: rgba(255,255,255,0.7); margin: 3px 0 0; font-size: 0.8rem;">Sconces & wall fixtures</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 px-1">
+                <div style="position: relative; border-radius: var(--radius); overflow: hidden; height: 320px;">
+                    <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=600&q=80"
+                        alt="[REPLACE: POWERLAM chandelier installed in a hotel lobby or banquet hall]"
+                        style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;"
+                        onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+                    <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(20,12,4,0.75) 0%, transparent 50%);"></div>
+                    <div style="position: absolute; bottom: 20px; left: 20px; color: #fff;">
+                        <h5 style="color: #fff; margin: 0; font-size: 1rem;">Chandeliers</h5>
+                        <p style="color: rgba(255,255,255,0.7); margin: 3px 0 0; font-size: 0.8rem;">Lobbies & banquet spaces</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 px-1">
+                <div style="position: relative; border-radius: var(--radius); overflow: hidden; height: 320px;">
+                    <img src="https://images.unsplash.com/photo-1513506003901-1e6a35549435?auto=format&fit=crop&w=600&q=80"
+                        alt="[REPLACE: POWERLAM pendant lights over a dining table or kitchen island]"
+                        style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;"
+                        onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+                    <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(20,12,4,0.75) 0%, transparent 50%);"></div>
+                    <div style="position: absolute; bottom: 20px; left: 20px; color: #fff;">
+                        <h5 style="color: #fff; margin: 0; font-size: 1rem;">Pendant Lights</h5>
+                        <p style="color: rgba(255,255,255,0.7); margin: 3px 0 0; font-size: 0.8rem;">Dining & kitchen areas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 px-1">
+                <div style="position: relative; border-radius: var(--radius); overflow: hidden; height: 320px;">
+                    <img src="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?auto=format&fit=crop&w=600&q=80"
+                        alt="[REPLACE: POWERLAM ceiling light installed in a living room or office]"
+                        style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;"
+                        onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+                    <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(20,12,4,0.75) 0%, transparent 50%);"></div>
+                    <div style="position: absolute; bottom: 20px; left: 20px; color: #fff;">
+                        <h5 style="color: #fff; margin: 0; font-size: 1rem;">Ceiling Lights</h5>
+                        <p style="color: rgba(255,255,255,0.7); margin: 3px 0 0; font-size: 0.8rem;">Living rooms & offices</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Lighting Range Gallery End -->
+
+
+    <!-- Key Benefits -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5 wow fadeInLeft">
+                    <div class="section-title">
+                        <div class="subtitle"><i class="fas fa-star" style="font-size: 0.7rem;"></i> Why POWERLAM</div>
+                        <h2>Key Benefits</h2>
+                    </div>
+                    <p class="mb-4">Every POWERLAM product is selected and tested to meet defined quality standards — ensuring dependable performance and customer satisfaction across residential, commercial and hospitality projects.</p>
+                    <p class="mb-4">Our wide product range and project supply capability makes POWERLAM the preferred choice for distributors, dealers, interior designers, and project contractors.</p>
+                    <a href="contact.html" class="btn btn-primary">Become a Dealer <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+                <div class="col-lg-7 wow fadeInRight">
+                    <div class="row g-4">
+                        <div class="col-sm-6">
+                            <div class="benefit-card">
+                                <div class="benefit-icon"><i class="fas fa-palette"></i></div>
+                                <h5>Modern Designs</h5>
+                                <p>Contemporary aesthetics aligned with current interior design trends — suitable for every style from minimalist to luxury.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="benefit-card">
+                                <div class="benefit-icon"><i class="fas fa-leaf"></i></div>
+                                <h5>Energy Efficiency</h5>
+                                <p>Advanced LED technology delivering significant energy savings without compromising on brightness or light quality.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="benefit-card">
+                                <div class="benefit-icon"><i class="fas fa-shield-alt"></i></div>
+                                <h5>Quality Components</h5>
+                                <p>Sourced and manufactured to strict quality standards with ISI, BIS, CE, RoHS, and ISO certified products.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="benefit-card">
+                                <div class="benefit-icon"><i class="fas fa-th-large"></i></div>
+                                <h5>Wide Product Range</h5>
+                                <p>From ceiling lights to chandeliers — a comprehensive range enabling one-supplier sourcing for complete lighting requirements.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="benefit-card">
+                                <div class="benefit-icon"><i class="fas fa-building"></i></div>
+                                <h5>Project Supply Capability</h5>
+                                <p>Bulk supply with efficient logistics for hotels, housing projects, commercial complexes, and large-scale interior fit-outs across India.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Applications -->
+    <section class="section-padding" style="background: var(--light);">
+        <div class="container">
+            <div class="section-title text-center">
+                <div class="subtitle">Where We Serve</div>
+                <h2>Application Segments</h2>
+                <p style="max-width: 500px; margin: 0 auto;">POWERLAM lighting solutions are designed to meet the demands of diverse environments and end-use applications.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="application-card">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=600&q=80" alt="Residential Lighting">
+                        <div class="overlay-label">
+                            <h5>Residential</h5>
+                            <p>Homes, apartments, villas & housing societies</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="application-card">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80" alt="Hospitality Lighting">
+                        <div class="overlay-label">
+                            <h5>Hospitality</h5>
+                            <p>Hotels, resorts, restaurants & banquet halls</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="application-card">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80" alt="Commercial Lighting">
+                        <div class="overlay-label">
+                            <h5>Commercial</h5>
+                            <p>Offices, showrooms, retail & commercial complexes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Business Advantages -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title text-center">
+                <div class="subtitle">For Your Business</div>
+                <h2>Business Advantages</h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="why-card">
+                        <div class="icon"><i class="fas fa-handshake"></i></div>
+                        <div>
+                            <h5>For Distributors</h5>
+                            <ul class="list-unstyled mb-0" style="color: var(--gray); font-size: 0.9rem;">
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>Strong product demand</li>
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>Consistent inventory support</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Attractive business opportunities</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="why-card">
+                        <div class="icon"><i class="fas fa-store"></i></div>
+                        <div>
+                            <h5>For Retailers</h5>
+                            <ul class="list-unstyled mb-0" style="color: var(--gray); font-size: 0.9rem;">
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>Wide product assortment</li>
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>Reliable supply chain</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Market-ready products</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="why-card">
+                        <div class="icon"><i class="fas fa-hard-hat"></i></div>
+                        <div>
+                            <h5>For Project Buyers</h5>
+                            <ul class="list-unstyled mb-0" style="color: var(--gray); font-size: 0.9rem;">
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>Bulk supply capabilities</li>
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>Competitive commercial pricing</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Dedicated project support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- OEM & Distribution -->
+    <section style="background: var(--light); padding: 60px 0;">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-7 wow fadeInLeft">
+                    <h3 class="mb-3">OEM & Private Label Solutions</h3>
+                    <p class="mb-0">We support OEM and private-label opportunities for distributors and dealers. With pan India and global distribution capability, efficient procurement, and logistics support — POWERLAM is positioned to meet large-scale project and commercial requirements.</p>
+                </div>
+                <div class="col-lg-5 wow fadeInRight">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center gap-2 p-3 bg-white rounded" style="border: 1px solid var(--border);">
+                                <i class="fas fa-globe text-primary fa-lg"></i>
+                                <span class="fw-medium" style="font-size: 0.9rem;">Pan India Distribution</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center gap-2 p-3 bg-white rounded" style="border: 1px solid var(--border);">
+                                <i class="fas fa-cogs text-primary fa-lg"></i>
+                                <span class="fw-medium" style="font-size: 0.9rem;">OEM & Private Label</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center gap-2 p-3 bg-white rounded" style="border: 1px solid var(--border);">
+                                <i class="fas fa-boxes text-primary fa-lg"></i>
+                                <span class="fw-medium" style="font-size: 0.9rem;">Bulk Supply Ready</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center gap-2 p-3 bg-white rounded" style="border: 1px solid var(--border);">
+                                <i class="fas fa-award text-primary fa-lg"></i>
+                                <span class="fw-medium" style="font-size: 0.9rem;">ISO Certified</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta-section wow fadeIn">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2>Interested in POWERLAM Lighting?</h2>
+                    <p class="mb-0">Whether you're a dealer, distributor, wholesaler, or project buyer — fill in our dealer inquiry form to get trade pricing, product catalogues, and support from our team.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                    <a href="contact.html" class="btn btn-white btn-lg me-2">Dealer Inquiry <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Other Products -->
+    <section style="padding: 60px 0;">
+        <div class="container">
+            <div class="section-title text-center mb-4">
+                <div class="subtitle">Also Explore</div>
+                <h3>Other Product Divisions</h3>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <a href="products.html#appliances" class="d-block p-4 text-center rounded" style="border: 1px solid var(--border); transition: var(--transition);" onmouseover="this.style.borderColor='var(--primary)'" onmouseout="this.style.borderColor='var(--border)'">
+                        <i class="fas fa-blender text-primary fa-2x mb-3"></i>
+                        <h6 class="mb-1">Home Appliances</h6>
+                        <p style="font-size: 0.85rem; margin: 0;">Induction, Air Fryers, Tea & Coffee</p>
+                    </a>
+                </div>
+                <div class="col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <a href="products.html#interior" class="d-block p-4 text-center rounded" style="border: 1px solid var(--border); transition: var(--transition);" onmouseover="this.style.borderColor='var(--primary)'" onmouseout="this.style.borderColor='var(--border)'">
+                        <i class="fas fa-paint-roller text-primary fa-2x mb-3"></i>
+                        <h6 class="mb-1">Interior Décor Solutions</h6>
+                        <p style="font-size: 0.85rem; margin: 0;">UV Marble, PVC Panels, Louvers</p>
+                    </a>
+                </div>
+                <div class="col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <a href="products.html#plywood" class="d-block p-4 text-center rounded" style="border: 1px solid var(--border); transition: var(--transition);" onmouseover="this.style.borderColor='var(--primary)'" onmouseout="this.style.borderColor='var(--border)'">
+                        <i class="fas fa-layer-group text-primary fa-2x mb-3"></i>
+                        <h6 class="mb-1">Plywood</h6>
+                        <p style="font-size: 0.85rem; margin: 0;">Ply Board, Doors, HDMR</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h5>Santosh Manufacturing</h5>
+                    <p class="footer-about">Santosh Manufacturing Units Pvt Ltd — manufacturer and importer of Home Appliances, Decorative Lighting (POWERLAM), Interior Decor Solutions (POWERLAM), and Plywood. Serving dealers, distributors, and wholesalers across India.</p>
+                    <div class="social-links mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Quick Links</h5>
+                    <div class="footer-links">
+                        <a href="index.html"><i class="fas fa-chevron-right"></i> Home</a>
+                        <a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a>
+                        <a href="products.html"><i class="fas fa-chevron-right"></i> Products</a>
+                        <a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Products</h5>
+                    <div class="footer-links">
+                        <a href="products.html#appliances"><i class="fas fa-chevron-right"></i> Home Appliances</a>
+                        <a href="decorative-lighting.html"><i class="fas fa-chevron-right"></i> Decorative Lighting</a>
+                        <a href="products.html#interior"><i class="fas fa-chevron-right"></i> Interior Decor</a>
+                        <a href="products.html#plywood"><i class="fas fa-chevron-right"></i> Plywood</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Contact Info</h5>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> D-142, Sector 63, Noida, U.P.</p>
+                        <p><i class="fas fa-phone-alt"></i> +91 XXXXX XXXXX</p>
+                        <p><i class="fas fa-envelope"></i> info@santoshmfg.com</p>
+                        <p><i class="fas fa-clock"></i> Mon - Sat: 9AM - 6PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        &copy; 2025 <a href="#">Santosh Manufacturing</a>. All Rights Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+                        GST: 09ABJCS3272R1ZG
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

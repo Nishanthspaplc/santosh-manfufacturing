@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home Appliances | Santosh Manufacturing</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="home appliances, induction cooktops, infrared cooktops, air fryers, tea machines, coffee machines, B2B appliances India" name="keywords">
+    <meta content="Santosh Manufacturing Home Appliances — induction cooktops, infrared cooktops, air fryers, tea machines, coffee machines. ISI/BIS certified. B2B supply to dealers, distributors across India." name="description">
+
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .cert-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(171,116,66,0.08);
+            border: 1px solid rgba(171,116,66,0.25);
+            border-radius: 50px;
+            padding: 5px 14px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+        .benefit-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 28px 24px;
+            height: 100%;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+        }
+        .benefit-card:hover {
+            border-color: var(--primary);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-4px);
+        }
+        .benefit-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 12px;
+            background: rgba(171,116,66,0.1);
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            margin-bottom: 16px;
+        }
+        .product-type-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+            height: 100%;
+        }
+        .product-type-card:hover {
+            border-color: var(--primary);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-4px);
+        }
+        .product-type-card .img-wrap { height: 220px; overflow: hidden; }
+        .product-type-card .img-wrap img {
+            width: 100%; height: 100%; object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .product-type-card:hover .img-wrap img { transform: scale(1.05); }
+        .product-type-card .card-body { padding: 20px; }
+        .product-type-card h5 { font-size: 1rem; margin-bottom: 6px; }
+        .product-type-card p { font-size: 0.875rem; margin: 0; }
+        .stats-strip { background: var(--dark); padding: 48px 0; }
+        .stat-item { text-align: center; }
+        .stat-item .num { font-size: 2.2rem; font-weight: 800; color: var(--accent); line-height: 1; }
+        .stat-item .label { font-size: 0.85rem; color: rgba(255,255,255,0.65); margin-top: 6px; }
+        .process-tile {
+            position: relative;
+            border-radius: var(--radius);
+            overflow: hidden;
+        }
+        .process-tile img {
+            width: 100%; height: 100%; object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .process-tile:hover img { transform: scale(1.04); }
+        .process-tile .overlay {
+            position: absolute; inset: 0;
+            background: linear-gradient(to top, rgba(20,12,4,0.78) 0%, transparent 55%);
+        }
+        .process-tile .label {
+            position: absolute; bottom: 18px; left: 18px; color: #fff;
+        }
+        .process-tile .label span {
+            font-size: 0.7rem; font-weight: 600; letter-spacing: 0.08em;
+            text-transform: uppercase; opacity: 0.75; display: block;
+        }
+        .process-tile .label h6 { color: #fff; margin: 3px 0 0; }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Topbar -->
+    <div class="topbar d-none d-lg-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fas fa-map-marker-alt" style="color: var(--primary-light);"></i>
+                            <span>D-142, Sector 63, Noida, U.P.</span>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fas fa-clock" style="color: var(--primary-light);"></i>
+                            <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-end">
+                    <div class="d-flex align-items-center justify-content-end gap-3">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fas fa-phone-alt" style="color: var(--primary-light);"></i>
+                            <span>+91 XXXXX XXXXX</span>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fas fa-envelope" style="color: var(--primary-light);"></i>
+                            <span>info@santoshmfg.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0">Santosh<span> Manufacturing</span></h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="products.html" class="nav-item nav-link active">Products</a>
+            </div>
+            <a href="contact.html" class="nav-cta d-flex">Get In Touch <i class="fa fa-arrow-right ms-2"></i></a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1 class="wow fadeInDown">Home Appliances</h1>
+            <p class="text-white-50 mt-2 mb-3 wow fadeInUp" style="max-width: 520px;">Designed to make cooking faster, easier, and more enjoyable — ISI &amp; BIS certified appliances for dealers and distributors across India.</p>
+            <nav aria-label="breadcrumb" class="wow fadeInUp">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="products.html">Products</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Home Appliances</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+
+    <!-- Brand Hero Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInLeft">
+                    <img class="rounded-xl w-100"
+                        src="https://images.unsplash.com/photo-1556909172-54557c7e4fb7?auto=format&fit=crop&w=800&q=80"
+                        alt="[REPLACE: Santosh Manufacturing home appliances product range display]"
+                        style="height: 500px; object-fit: cover;">
+                </div>
+                <div class="col-lg-6 wow fadeInRight">
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <span class="cert-badge"><i class="fas fa-award"></i> ISI Certified</span>
+                        <span class="cert-badge"><i class="fas fa-certificate"></i> BIS Certified</span>
+                        <span class="cert-badge"><i class="fas fa-globe"></i> CE & RoHS</span>
+                    </div>
+                    <div class="section-title mb-3">
+                        <h2 style="margin-bottom: 8px;">Reliable Appliances for Modern Households</h2>
+                    </div>
+                    <p class="mb-3">"Designed to make cooking faster, easier, and more enjoyable." Our home appliances focus on delivering products that combine functionality, durability, and modern design — through manufacturing partnerships and global sourcing capabilities.</p>
+                    <p class="mb-4">We serve a growing network of dealers, distributors, and wholesalers across India with products that meet the demands of today's consumers and retail markets.</p>
+
+                    <div class="row g-3 mb-4">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fas fa-check-circle text-primary"></i>
+                                <span class="fw-medium">Induction Cooktops</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fas fa-check-circle text-primary"></i>
+                                <span class="fw-medium">Infrared Cooktops</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fas fa-check-circle text-primary"></i>
+                                <span class="fw-medium">Air Fryers</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fas fa-check-circle text-primary"></i>
+                                <span class="fw-medium">Tea Machines</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fas fa-check-circle text-primary"></i>
+                                <span class="fw-medium">Coffee Machines</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="contact.html" class="btn btn-primary">Dealer Inquiry <i class="fas fa-arrow-right ms-2"></i></a>
+                        <a href="contact.html" class="btn btn-outline-primary">Download Catalogue <i class="fas fa-file-pdf ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Stats Strip -->
+    <div class="stats-strip">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <div class="num">5</div>
+                        <div class="label">Product Categories</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <div class="num">ISI/BIS</div>
+                        <div class="label">Certified Products</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <div class="num">Pan India</div>
+                        <div class="label">Distribution Network</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <div class="num">B2B</div>
+                        <div class="label">Dealer & Distributor Focus</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Product Categories Grid -->
+    <section class="section-padding" style="background: var(--light);">
+        <div class="container">
+            <div class="section-title text-center">
+                <div class="subtitle"><i class="fas fa-blender" style="font-size: 0.7rem;"></i> Product Range</div>
+                <h2>Our Appliance Categories</h2>
+                <p style="max-width: 500px; margin: 0 auto;">A complete range of kitchen and beverage appliances — combining modern design with practical functionality for every household and commercial use.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="product-type-card">
+                        <div class="img-wrap">
+                            <img src="https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?auto=format&fit=crop&w=600&q=80"
+                                alt="[REPLACE: Induction cooktop product photo — Santosh Manufacturing]">
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag">Appliances</span>
+                            <h5>Induction Cooktops</h5>
+                            <p>Energy-efficient induction cooktops with precise temperature control — ideal for households and commercial kitchens. ISI certified.</p>
+                            <a href="contact.html" class="card-link mt-3 d-inline-flex align-items-center gap-1">Inquire <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="product-type-card">
+                        <div class="img-wrap">
+                            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=600&q=80"
+                                alt="[REPLACE: Infrared cooktop product photo — Santosh Manufacturing]">
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag">Appliances</span>
+                            <h5>Infrared Cooktops</h5>
+                            <p>Rapid heating infrared cooktops delivering consistent performance — suitable for modern kitchens and commercial food service.</p>
+                            <a href="contact.html" class="card-link mt-3 d-inline-flex align-items-center gap-1">Inquire <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="product-type-card">
+                        <div class="img-wrap">
+                            <img src="https://images.unsplash.com/photo-1585659722983-3a675dabf23d?auto=format&fit=crop&w=600&q=80"
+                                alt="[REPLACE: Air fryer product photo — Santosh Manufacturing]">
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag">Appliances</span>
+                            <h5>Air Fryers</h5>
+                            <p>Healthier cooking with rapid air technology — crispy results with minimal oil, perfect for modern health-conscious households.</p>
+                            <a href="contact.html" class="card-link mt-3 d-inline-flex align-items-center gap-1">Inquire <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="product-type-card">
+                        <div class="img-wrap">
+                            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=600&q=80"
+                                alt="[REPLACE: Tea machine product photo — Santosh Manufacturing]">
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag">Appliances</span>
+                            <h5>Tea Machines</h5>
+                            <p>Automated tea makers delivering consistent, perfectly brewed tea — designed for home use and the hospitality sector.</p>
+                            <a href="contact.html" class="card-link mt-3 d-inline-flex align-items-center gap-1">Inquire <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="product-type-card">
+                        <div class="img-wrap">
+                            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80"
+                                alt="[REPLACE: Coffee machine product photo — Santosh Manufacturing]">
+                        </div>
+                        <div class="card-body">
+                            <span class="category-tag">Appliances</span>
+                            <h5>Coffee Machines</h5>
+                            <p>Premium coffee makers for the perfect cup every time — suitable for home, office, and hospitality applications.</p>
+                            <a href="contact.html" class="card-link mt-3 d-inline-flex align-items-center gap-1">Inquire <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- From Factory to Market — 4-image visual section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title text-center">
+                <div class="subtitle"><i class="fas fa-industry" style="font-size: 0.7rem;"></i> Our Process</div>
+                <h2>From Factory to Market</h2>
+                <p style="max-width: 500px; margin: 0 auto;">Every appliance goes through strict quality control — from manufacturing and inspection to packaging and warehouse dispatch.</p>
+            </div>
+            <div class="row g-3">
+                <!-- Large: Product Range Display -->
+                <div class="col-lg-6">
+                    <div class="process-tile" style="height: 420px;">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80"
+                            alt="[REPLACE: Santosh Manufacturing appliance product range display — full lineup of cooktops, fryers, beverage machines]">
+                        <div class="overlay"></div>
+                        <div class="label">
+                            <span>Our Range</span>
+                            <h5 style="color: #fff; margin: 4px 0 0;">Product Range Display</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right: 3 stacked tiles -->
+                <div class="col-lg-6">
+                    <div class="row g-3 h-100">
+                        <div class="col-12">
+                            <div class="process-tile" style="height: 130px;">
+                                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=80"
+                                    alt="[REPLACE: Quality inspection — technician checking appliance before dispatch]">
+                                <div class="overlay"></div>
+                                <div class="label">
+                                    <span>Quality Assurance</span>
+                                    <h6 style="color: #fff; margin: 3px 0 0;">Quality Inspection</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="process-tile" style="height: 130px;">
+                                <img src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=900&q=80"
+                                    alt="[REPLACE: Packaging line — appliances being packed and labelled for dispatch]">
+                                <div class="overlay"></div>
+                                <div class="label">
+                                    <span>Operations</span>
+                                    <h6 style="color: #fff; margin: 3px 0 0;">Packaging Line</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="process-tile" style="height: 130px;">
+                                <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=900&q=80"
+                                    alt="[REPLACE: Warehouse inventory — shelves stacked with boxed appliances ready for distribution]">
+                                <div class="overlay"></div>
+                                <div class="label">
+                                    <span>Logistics</span>
+                                    <h6 style="color: #fff; margin: 3px 0 0;">Warehouse Inventory</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Key Benefits -->
+    <section class="section-padding" style="background: var(--light);">
+        <div class="container">
+            <div class="section-title text-center">
+                <div class="subtitle"><i class="fas fa-star" style="font-size: 0.7rem;"></i> Why Choose Us</div>
+                <h2>Quality You Can Count On</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fas fa-certificate"></i></div>
+                        <h5>ISI & BIS Certified</h5>
+                        <p>Every appliance meets ISI, BIS, CE, and RoHS certification standards — ensuring safety and regulatory compliance.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fas fa-cogs"></i></div>
+                        <h5>Manufacturing Expertise</h5>
+                        <p>Strong manufacturing partnerships and global sourcing capabilities delivering reliable, market-ready products.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fas fa-boxes"></i></div>
+                        <h5>Consistent Inventory</h5>
+                        <p>Reliable stock availability and supply chain support — ensuring dealers and distributors are never out of stock.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fas fa-shipping-fast"></i></div>
+                        <h5>Nationwide Supply</h5>
+                        <p>Pan India distribution network with efficient logistics to dealers, distributors, and wholesalers across all regions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Business Advantages -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title text-center">
+                <div class="subtitle">For Your Business</div>
+                <h2>Business Advantages</h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="why-card">
+                        <div class="icon"><i class="fas fa-handshake"></i></div>
+                        <div>
+                            <h5>For Distributors</h5>
+                            <ul class="list-unstyled mb-0" style="color: var(--gray); font-size: 0.9rem;">
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>Strong product demand</li>
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>Consistent inventory support</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Attractive business opportunities</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="why-card">
+                        <div class="icon"><i class="fas fa-store"></i></div>
+                        <div>
+                            <h5>For Retailers</h5>
+                            <ul class="list-unstyled mb-0" style="color: var(--gray); font-size: 0.9rem;">
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>Wide product assortment</li>
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>Reliable supply chain</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Market-ready products</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="why-card">
+                        <div class="icon"><i class="fas fa-hard-hat"></i></div>
+                        <div>
+                            <h5>For Project Buyers</h5>
+                            <ul class="list-unstyled mb-0" style="color: var(--gray); font-size: 0.9rem;">
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>Bulk supply capabilities</li>
+                                <li class="mb-1"><i class="fas fa-check text-primary me-2"></i>Competitive commercial pricing</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Dedicated project support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- OEM & Distribution -->
+    <section style="background: var(--light); padding: 60px 0;">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-7 wow fadeInLeft">
+                    <h3 class="mb-3">OEM & Private Label Solutions</h3>
+                    <p class="mb-0">We support OEM and private-label opportunities for distributors and dealers. With pan India and global distribution capability, efficient procurement, and logistics support — Santosh Manufacturing is positioned to meet large-scale project and commercial requirements.</p>
+                </div>
+                <div class="col-lg-5 wow fadeInRight">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center gap-2 p-3 bg-white rounded" style="border: 1px solid var(--border);">
+                                <i class="fas fa-globe text-primary fa-lg"></i>
+                                <span class="fw-medium" style="font-size: 0.9rem;">Pan India Distribution</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center gap-2 p-3 bg-white rounded" style="border: 1px solid var(--border);">
+                                <i class="fas fa-cogs text-primary fa-lg"></i>
+                                <span class="fw-medium" style="font-size: 0.9rem;">OEM & Private Label</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center gap-2 p-3 bg-white rounded" style="border: 1px solid var(--border);">
+                                <i class="fas fa-boxes text-primary fa-lg"></i>
+                                <span class="fw-medium" style="font-size: 0.9rem;">Bulk Supply Ready</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center gap-2 p-3 bg-white rounded" style="border: 1px solid var(--border);">
+                                <i class="fas fa-certificate text-primary fa-lg"></i>
+                                <span class="fw-medium" style="font-size: 0.9rem;">ISI / BIS Certified</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta-section wow fadeIn">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2>Interested in Our Home Appliances Range?</h2>
+                    <p class="mb-0">Whether you're a dealer, distributor, or wholesaler — fill in our dealer inquiry form to get trade pricing, product catalogues, and support from our team.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                    <a href="contact.html" class="btn btn-white btn-lg">Dealer Inquiry <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Other Products -->
+    <section style="padding: 60px 0;">
+        <div class="container">
+            <div class="section-title text-center mb-4">
+                <div class="subtitle">Also Explore</div>
+                <h3>Other Product Divisions</h3>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <a href="decorative-lighting.html" class="d-block p-4 text-center rounded" style="border: 1px solid var(--border); transition: var(--transition);" onmouseover="this.style.borderColor='var(--primary)'" onmouseout="this.style.borderColor='var(--border)'">
+                        <i class="fas fa-lightbulb text-primary fa-2x mb-3"></i>
+                        <h6 class="mb-1">Decorative Lighting</h6>
+                        <p style="font-size: 0.85rem; margin: 0;">Chandeliers, Pendants, Wall Lights</p>
+                    </a>
+                </div>
+                <div class="col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <a href="interior-decor.html" class="d-block p-4 text-center rounded" style="border: 1px solid var(--border); transition: var(--transition);" onmouseover="this.style.borderColor='var(--primary)'" onmouseout="this.style.borderColor='var(--border)'">
+                        <i class="fas fa-paint-roller text-primary fa-2x mb-3"></i>
+                        <h6 class="mb-1">Interior Décor Solutions</h6>
+                        <p style="font-size: 0.85rem; margin: 0;">UV Marble, PVC Panels, Louvers</p>
+                    </a>
+                </div>
+                <div class="col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <a href="plywood.html" class="d-block p-4 text-center rounded" style="border: 1px solid var(--border); transition: var(--transition);" onmouseover="this.style.borderColor='var(--primary)'" onmouseout="this.style.borderColor='var(--border)'">
+                        <i class="fas fa-layer-group text-primary fa-2x mb-3"></i>
+                        <h6 class="mb-1">Plywood</h6>
+                        <p style="font-size: 0.85rem; margin: 0;">Ply Board, Doors, HDMR</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h5>Santosh Manufacturing</h5>
+                    <p class="footer-about">Santosh Manufacturing Units Pvt Ltd — manufacturer and importer of Home Appliances, Decorative Lighting (POWERLAM), Interior Decor Solutions (POWERLAM), and Plywood. Serving dealers, distributors, and wholesalers across India.</p>
+                    <div class="social-links mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Quick Links</h5>
+                    <div class="footer-links">
+                        <a href="index.html"><i class="fas fa-chevron-right"></i> Home</a>
+                        <a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a>
+                        <a href="products.html"><i class="fas fa-chevron-right"></i> Products</a>
+                        <a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Products</h5>
+                    <div class="footer-links">
+                        <a href="home-appliances.html"><i class="fas fa-chevron-right"></i> Home Appliances</a>
+                        <a href="decorative-lighting.html"><i class="fas fa-chevron-right"></i> Decorative Lighting</a>
+                        <a href="interior-decor.html"><i class="fas fa-chevron-right"></i> Interior Décor</a>
+                        <a href="plywood.html"><i class="fas fa-chevron-right"></i> Plywood</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Contact Info</h5>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> D-142, Sector 63, Noida, U.P.</p>
+                        <p><i class="fas fa-phone-alt"></i> +91 XXXXX XXXXX</p>
+                        <p><i class="fas fa-envelope"></i> info@santoshmfg.com</p>
+                        <p><i class="fas fa-clock"></i> Mon - Sat: 9AM - 6PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        &copy; 2025 <a href="#">Santosh Manufacturing</a>. All Rights Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+                        GST: 09ABJCS3272R1ZG
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
