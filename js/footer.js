@@ -40,7 +40,7 @@
                         <p><i class="fas fa-phone-alt"></i> Decorative Lighting: +91 7814740670</p>
                         <p><i class="fas fa-phone-alt"></i> Interior Decor: +91 9818314804</p>
                         <p><i class="fas fa-phone-alt"></i> Home Appliances: +91 8930469888</p>
-                        <p><i class="fas fa-envelope"></i> info@santoshmfg.com</p>
+                        <p><i class="fas fa-envelope"></i> info@santoshmanufacturing.com</p>
                         <p><i class="fas fa-clock"></i> Mon - Sat: 9AM - 6PM</p>
                     </div>
                 </div>
